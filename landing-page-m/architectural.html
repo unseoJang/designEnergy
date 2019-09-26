@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="Keywords" content="" />	
+	<meta name="Description" content="" />
+	<meta name="Robots" content="noindex, nofollow" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="robots" content="index,nofollow">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>Design Energy</title>
+	<link rel="stylesheet" type="text/css" href="./@resource/css/common/reset.css">
+	<link rel="stylesheet" type="text/css" href="./@resource/css/style.css">
+	<script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+	<!-- <div class="standard_about"><img src="./@resource/img/3_m_1_Interior.jpg"></div> -->
+	<header>
+		<h1><a href="index.html"><img src="./@resource/img/logo.png"></a></h1>
+		<div class="m-menu-btn trs-prop-bg trs-du-06">
+			<div class="m-menu-btn-wrap">
+				<span class="one trs-prop-transform trs-du-06"></span>
+				<span class="two trs-prop-opacity trs-du-06"></span>
+				<span class="three trs-prop-transform trs-du-06"></span>
+			</div>
+		</div>
+		<nav>
+			<div class="nav-header mobile-nav-menu">
+				<h1><a href="index.html"><img src="./@resource/img/logo.png"></a></h1>
+				<!-- <div class="m-menu-btn trs-prop-bg trs-du-06 on">
+					<div class="m-menu-btn-wrap">
+				      <span class="one trs-prop-transform trs-du-06"></span>
+				      <span class="two trs-prop-opacity trs-du-06"></span>
+				      <span class="three trs-prop-transform trs-du-06"></span>
+			    	</div>
+			    </div> -->
+			</div>
+			<div class="nav-wrap">
+				<ul>
+					<li><a href="about.html">About</a></li>
+					<li><a href="interior.html">Interior</a></li>
+					<li><a href="architectural.html">Architectural</a></li>
+					<li><a href="recruit.html">Recruit</a></li>
+				</ul>
+			</div>
+			<div class="nav-footer">
+				<address>
+					<ul>
+						<li>02-477-8220</li>
+						<li>de@designenergy.co.kr</li>
+						<li>서울특별시 송파구 백제고분로 117 정일</li>
+					</ul>
+				</address>
+				<div class="nav-copyright">Copyright © DesignEnergy All rights reserved.</div>
+			</div>
+		</nav>
+	</header>
+	<div id="wrap"class="wrapper">
+		<section class="page-intro delighter sec-interior" data-delighter="">
+			<article id="sticker" class="sub-article-wrap sticky-wrapper interior-wrap">
+				<div class="container container-wrap">
+					<p class="sub-title-area">
+						공간을 담아내는 사람들<span class="dot">.</span><br/>
+						우리는 가치와 삶을<br/> 먼저 생각합니다<span class="dot">.</span>
+					</p>
+					<div class="banner cont-article-wrap">
+						<span>Interior by Designenergy</span>
+						<ul>
+							<li><a href="./architectural_view/architectural_view01.html"><img src="./@resource/img/banner_img_01.jpg"></a></li>
+							<li><a href="./architectural_view/architectural_view02.html"><img src="./@resource/img/banner_img_02.jpg"></a></li>
+							<li><a href="./architectural_view/architectural_view03.html"><img src="./@resource/img/banner_img_03.jpg"></a></li>
+						</ul>
+					</div>
+					<!-- <div class="scroll-moction scroll-black " data-effect="slideUp">
+						<span></span>
+					</div> -->
+				</div>
+			</article>
+		</section>
+		<section class="int-section-wrap">
+			<article class="color_change-list">
+				<ul>
+					<li class="init-detail delighter" data-delighter="">
+						<a href="./architectural_view/architectural_view01.html" class="int-btn">
+							<div class="int-tit">
+								<div class="int-tit-wrap">
+									<h2>STARBUCKS</h2>
+									<p>EVERLAND RESERVE</p>
+								</div>
+							</div>
+							<div class="img-wrap"><img src="./@resource/img/architectural_list_img/architectural-01-starbucks-everand-r.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="init-detail delighter" data-delighter="">
+						<a href="./architectural_view/architectural_view02.html" class="int-btn">
+							<div class="int-tit">
+								<div class="int-tit-wrap">
+									<h2>JUUN.J</h2>
+									<p>Dosan-daero</p>
+								</div>
+							</div>
+							<div class="img-wrap"><img src="./@resource/img/architectural_list_img/architectural-02-juun.j-dosan.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="init-detail delighter" data-delighter="">
+						<a href="./architectural_view/architectural_view03.html" class="int-btn">
+							<div class="int-tit">
+								<div class="int-tit-wrap">
+									<h2>STARBUCKS</h2>
+									<p>BUSAN RESERVE</p>
+								</div>
+							</div>
+							<div class="img-wrap"><img src="./@resource/img/architectural_list_img/architectural-03-starbucks-busan-r.jpg" alt=""></div>
+						</a>
+					</li>
+				</ul>
+			</article>
+			<div id="go-up" class="btn-top-wrap js-hide"><a href="javascript:void(0);" class="btn-top"></a></div>
+		</section>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			 initPage();
+			scrollJs();
+			naviActi();
+		});
+		function initPage(){
+
+  /*
+  * Used in multiple functions
+  */
+  let docWidth = $(window).width();
+
+  /*
+  * Header scroll down/up function
+  * https://codepen.io/josiahruddell/pen/piFfq
+  * with edits to control timing and not fire on every scroll.
+  */
+  $(function(){
+	    var lastScrollTop = 0, 
+	        delta = 30,
+	        header = $('header'),
+	        goUp = $('#go-up'),
+	        wentUp = true,
+	        wentDown = false;
+	    $(window).scroll(function(event){
+
+	      if($('nav.mobile').hasClass('open')){
+	        return false;
+	      }
+	      var st = $(this).scrollTop();
+
+	      // if(Math.sign(st) <= 0){
+	      //   return false;
+	      // }
+	       
+	      if(Math.abs(lastScrollTop - st) <= delta)
+	        return;
+
+	      //console.log(st+' '+lastScrollTop);
+	      
+	      if (st > lastScrollTop){
+	        // downscroll code
+	        if(wentUp){
+	          header.removeClass('load-effect');
+	          goUp.removeClass('js-hide');
+	        }
+	        wentUp = false;
+	        wentDown = true;
+	      } else {
+	        // upscroll code
+	        if(wentDown){
+	          header.addClass('load-effect');
+	          goUp.addClass('js-hide');
+	        }
+	        wentUp = true;
+	        wentDown = false;
+	      }
+	      lastScrollTop = st;
+	    });
+	  });
+
+	  let goUp = $('#go-up');
+
+	  goUp.click(function(e){
+	    $('html,body').animate({scrollTop:0},500);
+	    e.preventDefault();
+	  })
+		};
+		function scrollJs(){
+		  var winW = $(window).outerWidth();
+		  var startchange = $('.color_change-list');
+		  var offset = startchange.offset();
+		  var headHeight = $('header').outerHeight() / 2;
+		    $(document).scroll(function() { 
+		      scroll_start = $(this).scrollTop();
+		      if(scroll_start >= offset.top - headHeight) {
+		        $('header').addClass('color_change-list');
+		      } else if(scroll_start < offset.top - headHeight) {
+		        $('header').removeClass('color_change-list');
+		      };
+		    });
+
+		  }
+		  function naviActi(){
+  $('.m-menu-btn').click(function(e){
+    $(this).toggleClass('on');
+    $('nav').toggleClass('active');
+  });
+
+}
+	</script>
+	<script type="text/javascript" src="./@resource/lip/delighters/delighters.min.js"></script>
+	<script type="text/javascript" src="./@resource/lip/sticky/sticky.js"></script>
+	<script type="text/javascript" src="./@resource/js/about_script.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js?ver=4.9.11"></script>
+	<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js?ver=4.9.11'></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js?ver=4.9.11"></script>
+	<!-- <script type="text/javascript" src="./@resource/js/main_section.js"></script> -->
+	<script type="text/javascript" src="./@resource/js/main_script.js"></script>
+</html>
