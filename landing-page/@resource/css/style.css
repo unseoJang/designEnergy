@@ -49,21 +49,27 @@ body header nav ul li.menu-list a.active:hover::before{opacity: .3;transition: o
   animation: slideUpSkew 1s .5s ease 1 forwards;
 }*/
 
-.section.active .title[data-effect='slideUpSkew'] {
-  animation: slideUpSkew 1s .7s ease 1 forwards;
-}
 .sub-title, .title, .desc, .main-footer div{
     opacity: 0;
   }
  .section.active .desc[data-effect='slideUp']{
-    animation: slideUp .8s .3s ease-out 1 forwards;
+    animation: slideUp .8s 1.2s ease-out 1 forwards;
   }
-  .section.active .title {
+.section.active .title {
     animation: slideUp .4s .3s ease-out 1 forwards;
   }
-.main-footer div{
-  animation: slideUp .8s 1.4s ease-out 1 forwards;
-}
+  .main-footer div{
+    animation: slideUp .8s 1.4s ease-out 1 forwards;
+  }
+.section.active .title.first {
+    animation: slideUp .4s .4s ease-out 1 forwards;
+  }
+ .section.active .title.sec {
+    animation: slideUp .4s .8s ease-out 1 forwards;
+  }
+   .section.active .title.third {
+    animation: slideUp .4s 1.2s ease-out 1 forwards;
+  }
 
 .section a{display:block;overflow:hidden;}
 .delighter{transition:all 1s ease-out;opacity: 0;}
