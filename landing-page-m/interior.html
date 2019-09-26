@@ -12,6 +12,7 @@
 	<meta name="robots" content="index,nofollow">
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
 	<title>Design Energy</title>
 	<link rel="stylesheet" type="text/css" href="./@resource/css/common/reset.css">
 	<link rel="stylesheet" type="text/css" href="./@resource/css/style.css">
@@ -503,7 +504,7 @@
 	      if (st > lastScrollTop){
 	        // downscroll code
 	        if(wentUp){
-	          header.removeClass('js-hide');
+	          header.addClass('js-hide');
 	          goUp.removeClass('js-hide');
 	        }
 	        wentUp = false;
@@ -511,7 +512,7 @@
 	      } else {
 	        // upscroll code
 	        if(wentDown){
-	          header.addClass('js-hide');
+	          header.removeClass('js-hide');
 	          goUp.addClass('js-hide');
 	        }
 	        wentUp = true;

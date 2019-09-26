@@ -11,6 +11,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="robots" content="index,nofollow">
 	<meta name="description" content="">
+	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<title>Design Energy</title>
 	<link rel="stylesheet" type="text/css" href="./@resource/css/common/reset.css">
@@ -166,7 +167,7 @@
 	      if (st > lastScrollTop){
 	        // downscroll code
 	        if(wentUp){
-	          header.removeClass('load-effect');
+	          header.addClass('load-effect');
 	          goUp.removeClass('js-hide');
 	        }
 	        wentUp = false;
@@ -174,7 +175,7 @@
 	      } else {
 	        // upscroll code
 	        if(wentDown){
-	          header.addClass('load-effect');
+	          header.removeClass('load-effect');
 	          goUp.addClass('js-hide');
 	        }
 	        wentUp = true;

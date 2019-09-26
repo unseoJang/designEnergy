@@ -50,7 +50,7 @@
 	      if (st > lastScrollTop){
 	        // downscroll code
 	        if(wentUp){
-	          header.removeClass('load-effect');
+	          header.addClass('js-hide');
 	          goUp.removeClass('js-hide');
 	        }
 	        wentUp = false;
@@ -58,7 +58,7 @@
 	      } else {
 	        // upscroll code
 	        if(wentDown){
-	          header.addClass('load-effect');
+	          header.removeClass('js-hide');
 	          goUp.addClass('js-hide');
 	        }
 	        wentUp = true;
