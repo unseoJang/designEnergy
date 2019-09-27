@@ -44,8 +44,8 @@
 			</article>
 		</section>
 		<section class="contents-wrap">
-			<article class="re-cont-img-wrap color-wrap-start delighter" data-delighter="">
-				<img src="./@resource/img/recruit_con_img.jpg" alt="" class="re-img-01 wow module"/>
+			<article class="re-cont-img-wrap color-wrap-start themify builder delighter" data-delighter="">
+				<img src="./@resource/img/recruit_con_img.jpg" alt="" class="re-img-01 wow module" data-parallax-element-speed="1"/>
 			</article>
 			<article class="re-arti-wrap color-wrap-end delighter" data-delighter="">
 				<h2>인테리어 신입ㆍ경력 사원모집</h2>
@@ -172,6 +172,9 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js?ver=4.9.11"></script>
 	<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js?ver=4.9.11'></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js?ver=4.9.11"></script>
+	<script type="text/javascript" src="./@resource/lip/parallax/themify.parallaxit.min.js"></script>
+	<script type="text/javascript" src="./@resource/lip/themify/themify.main.js"></script>
+	<script type="text/javascript" src="./@resource/lip/parallax/themify.builder.script.min.js"></script>
 	<script type="text/javascript" src="./@resource/js/main_script.js"></script>
 	<script type="text/javascript" src="./@resource/js/about_script.js"></script>
 	<script type="text/javascript">
@@ -182,5 +185,31 @@
 		 var scrollValue = $(document).scrollTop(); 
 		 console.log(scrollValue); 
 		});
+		var tbLocalScript = {
+		"isAnimationActive"       : "1",
+		"isParallaxActive"        : "1",
+		"isParallaxScrollActive"  : "1",
+		"isStickyScrollActive"    : "1",
+		"animationInviewSelectors": [
+			".module.wow"
+		],
+		"fullwidth_support"       : "1",
+		"fullwidth_container"     : "body",
+		"loadScrollHighlight"     : "1",
+		"addons"                  : {
+			"typewriter": {
+				"selector": "[data-typer-targets]",
+			}
+		},
+		"breakpoints"             : {
+			"tablet_landscape": [
+				620, "1024"
+			],
+			"tablet"          : [
+				532, "716"
+			],
+			"mobile"          : "414"
+		},
+	};
 	</script>
 </html>
