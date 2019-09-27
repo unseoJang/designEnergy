@@ -75,10 +75,18 @@
 	    e.preventDefault();
 	  })
 		};
+
+		let menuBtn = $('.m-menu-btn');
+
 		function naviActi(){
-		  $('.m-menu-btn').click(function(e){
+		  menuBtn.click(function(e){
 		    $(this).toggleClass('on');
 		    $('nav').toggleClass('active');
+		    if(menuBtn.hasClass('on')){
+		      $('body').css('overflow-y','hidden');
+		    }else{
+		      $('body').css('overflow-y','auto');
+		    }
 		  });
 		};
 		function scrollJs(){
