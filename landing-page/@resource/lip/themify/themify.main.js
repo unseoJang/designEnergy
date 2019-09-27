@@ -722,12 +722,7 @@ var Themify,
                     m.href = e;
                     m.media = "only x";
                     m.id = b;
-                    k.parentNode.insertBefore(
-                        m,
-                        c
-                            ? k
-                            : k.nextSibling
-                    );
+                   
                     var p = function (a) {
                         for (var b = m.href, c = q.length; -- c;) 
                             if (q[c].href === b) 
