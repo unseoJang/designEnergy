@@ -65,10 +65,10 @@ body header nav ul li.menu-list a.active:hover::before{opacity: .3;transition: o
     animation: slideUp .4s .4s ease-out 1 forwards;
   }
  .section.active .title.sec {
-    animation: slideUp .4s .8s ease-out 1 forwards;
+    animation: slideUp .4s 1s ease-out 1 forwards;
   }
    .section.active .title.third {
-    animation: slideUp .4s 1.2s ease-out 1 forwards;
+    animation: slideUp .4s 1.4s ease-out 1 forwards;
   }
 
 .section a{display:block;overflow:hidden;}
