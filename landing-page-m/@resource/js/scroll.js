@@ -21,7 +21,7 @@ function initPage(){
   $(function(){
     var lastScrollTop = 0, 
         delta = 30,
-        header = $('header'),
+        header = $('header .header-btn-wrap'),
         goUp = $('#go-up'),
         wentUp = true,
         wentDown = false;

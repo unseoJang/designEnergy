@@ -1,10 +1,6 @@
 	$(window).scroll(function () {
 		 var scrollValue = $(document).scrollTop(); console.log(scrollValue); 
 		 var archTop = $('.arch-arti').offset().top;
-
-		 if(scrollValue == 600){
-		 	$(".arch-arti h2").addClass('on');
-		 } 
 		});
 		$(function(){
 			 initPage();
@@ -80,13 +76,9 @@
 
 		function naviActi(){
 		  menuBtn.click(function(e){
-		    $(this).toggleClass('on');
+		    // $(this).toggleClass('on');
 		    $('nav').toggleClass('active');
-		    if(menuBtn.hasClass('on')){
-		      $('body').css('overflow-y','hidden');
-		    }else{
-		      $('body').css('overflow-y','auto');
-		    }
+		    $('body').toggleClass('active');
 		  });
 		};
 		function scrollJs(){

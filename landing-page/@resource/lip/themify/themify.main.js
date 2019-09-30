@@ -554,7 +554,7 @@ var Themify,
                                 case "road": b.mapTypeId = Microsoft
                                         .Maps
                                         .MapTypeId
-                                        .road;
+                                        .road;wjwj
                                     break;
                                 case "streetside": b.mapTypeId = Microsoft
                                         .Maps
