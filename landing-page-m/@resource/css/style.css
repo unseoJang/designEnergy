@@ -37,11 +37,10 @@ header.main nav.active{transform:translateY(0);}
 .m-menu-btn span,.m-search-close span{display:block;width: 5.94vw;margin-bottom: 0.94vw;background-color:#fff;transition: transform .4s; -webkit-transition: transform .4s;background-color: #fff;height:0.78vw;}
 .m-menu-btn, .m-search-close{border-radius:7.81vw; position:absolute;right:0;top:6.56vw;cursor: pointer; -webkit-transition: right .5s;transition: right .5s;width:9.06vw;height:9.06vw;z-index:2;margin-right:4.84vw;}
 .header-btn-wrap .m-menu-btn,.header-btn-wrap .m-search-close{top:2vw;}
-header.main .m-menu-btn,header.main .m-search-close{margin:0;}
+header.main .m-menu-btn,header.main .m-search-close{margin:0;z-index:4;}
 .m-menu-btn.on,.m-search-close.on{background:#000;}
 header.view-header.color_change-view .m-menu-btn.on span{background-color:#fff;}
 .m-menu-btn .m-menu-btn-wrap,.m-search-close .m-menu-btn-wrap{position:absolute;left:50%;margin-left:-2.8vw;top:2.27vw;/*overflow:hidden;*/margin-top:0.31vw;}
-.main .m-menu-btn .m-menu-btn-wrap,.main .m-search-close .m-menu-btn-wrap{z-index:4;}
 .main .m-menu-btn span,.main .m-search-close span{background-color:#fff;}
 .m-menu-btn span,.m-search-close span{background-color:#000;}
 .m-menu-btn.on .one,.m-search-close.on .one{-webkit-transform: translateY(1.64vw) rotateZ(135deg);transform: translateY(1.64vw) rotateZ(135deg);}
