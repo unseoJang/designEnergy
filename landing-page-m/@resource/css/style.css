@@ -20,7 +20,7 @@ header.view-header h1{margin-left:2.97vw;}
 header.color_change .m-menu-btn span,header.color_change .m-search-close span{background-color:#fff;}
 header.color_change-list .m-menu-btn span{background-color:#fff;}
 header.main{opacity:1;max-width:100%;}
-header.main h1{position:absolute;top:11.95vw;}
+/*header.main h1{position:absolute;top:11.95vw;}*/
 header.main .m-menu-btn{/*top:24vw;*/top:6.25vw;right:6.56vw;}
 header h1 a{background:#fff;border-radius:7.81vw;display:inline-block;text-align:center;vertical-align:middle;line-height:12.81vw;margin-left:3.12vw;width:12.81vw;height:12.81vw;}
 header h1 a img{height:6.88vw;width:3.13vw;}
@@ -37,7 +37,7 @@ header.main nav.active{transform:translateY(0);}
 .m-menu-btn span,.m-search-close span{display:block;width: 5.94vw;margin-bottom: 0.94vw;background-color:#fff;transition: transform .4s; -webkit-transition: transform .4s;background-color: #fff;height:0.78vw;}
 .m-menu-btn, .m-search-close{border-radius:7.81vw; position:absolute;right:0;top:6.56vw;cursor: pointer; -webkit-transition: right .5s;transition: right .5s;width:9.06vw;height:9.06vw;z-index:2;margin-right:4.84vw;}
 .header-btn-wrap .m-menu-btn,.header-btn-wrap .m-search-close{top:2vw;}
-header.main .m-menu-btn,header.main .m-search-close{margin:0;}
+header.main .m-menu-btn,header.main .m-search-close{margin:0;z-index:4;}
 .m-menu-btn.on,.m-search-close.on{background:#000;}
 header.view-header.color_change-view .m-menu-btn.on span{background-color:#fff;}
 .m-menu-btn .m-menu-btn-wrap,.m-search-close .m-menu-btn-wrap{position:absolute;left:50%;margin-left:-2.8vw;top:2.27vw;/*overflow:hidden;*/margin-top:0.31vw;}
