@@ -41,6 +41,7 @@ header.main .m-menu-btn,header.main .m-search-close{margin:0;}
 .m-menu-btn.on,.m-search-close.on{background:#000;}
 header.view-header.color_change-view .m-menu-btn.on span{background-color:#fff;}
 .m-menu-btn .m-menu-btn-wrap,.m-search-close .m-menu-btn-wrap{position:absolute;left:50%;margin-left:-2.8vw;top:2.27vw;/*overflow:hidden;*/margin-top:0.31vw;}
+.main .m-menu-btn .m-menu-btn-wrap,.main .m-search-close .m-menu-btn-wrap{z-index:4;}
 .main .m-menu-btn span,.main .m-search-close span{background-color:#fff;}
 .m-menu-btn span,.m-search-close span{background-color:#000;}
 .m-menu-btn.on .one,.m-search-close.on .one{-webkit-transform: translateY(1.64vw) rotateZ(135deg);transform: translateY(1.64vw) rotateZ(135deg);}
