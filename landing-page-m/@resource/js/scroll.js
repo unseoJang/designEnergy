@@ -44,7 +44,7 @@ function initPage(){
       if (st > lastScrollTop){
         // downscroll code
         if(wentUp){
-          header.addClass('js-hide');
+          // header.addClass('js-hide');
           goUp.removeClass('js-hide');
         }
         wentUp = false;
@@ -52,7 +52,7 @@ function initPage(){
       } else {
         // upscroll code
         if(wentDown){
-          header.removeClass('js-hide');
+          // header.removeClass('js-hide');
           goUp.addClass('js-hide');
         }
         wentUp = true;
