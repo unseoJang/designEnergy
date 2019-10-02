@@ -247,46 +247,46 @@ footer address .capital-letter{}
 .btn-top-wrap .btn-top{display:inline-block;background:#c8c8c8 url('../img/go_top.png')no-repeat center center;border-radius:7.81vw;background-size:4.53vw 2.81vw; width:10.31vw;height:10.31vw;}
 
 
-@keyframes scrollHeight{
+@keyframes scrollTop{
   0%{
-    height:12.5vw;
+    margin-top:71.94vw;
   }
   10%{
-    height:12.5vw;
+    margin-top:71.94vw;
   }
   20%{
-    height:17.66vw;
+    margin-top:80vw;
   }
   30%{
-    height:12.5vw;
+    margin-top:71.94vw;
   }
   40%{
-    height:17.66vw;
+    margin-top:80vw;
   }
   50%{
-    height:12.5vw;
+    margin-top:71.94vw;
   }
   60%{
-    height:17.66vw;
+    margin-top:80vw;
   }
   70%{
-    height:12.5vw;
+    margin-top:71.94vw;
   }
   80%{
-    height:17.66vw;
+    margin-top:80vw;
   }
   90%{
-   height:12.5vw;
+   margin-top:71.94vw;
   }
   100%{
-    height:12.5vw;
+    margin-top:71.94vw;
   }
 }
 
-.scroll-moction{opacity:0;background:url('../img/icon_scroll.png')no-repeat center top;background-size:1.88vw 7.5vw;position:absolute;top:50%;z-index:2;padding:9.69vw 1.88vw 0 0;height:27.19vw;width:0.31vw;/*left:3.28vw;*/left:50%; margin-left:-47vw;}
+.scroll-moction{opacity:1;background:url('../img/icon_scroll.png')no-repeat center top;background-size:1.88vw 7.5vw;position:absolute;top:50%;z-index:2;padding:9.69vw 1.88vw 0 0;height:27.19vw;width:0.31vw;/*left:3.28vw;*/left:50%;margin-top:71.94vw; margin-left:-47vw;animation:scrollTop 5s 1.5s ease infinite forwards;}
 .scroll-moction.scroll-black{background:url('../img/icon_scroll_black.png')no-repeat center top;top:43.28vw;opacity: 1;width:0.31vw}
-.scroll-moction.main{animation: slideUp .8s 1.4s ease-out 1 forwards;/*opacity: 1;*/}
-.scroll-moction span{background:#fff;width:0.31vw;height:12.5vw;display:inline-block;position:relative;left:0.78vw;animation:scrollHeight 5s 1.5s ease infinite forwards; }
+.scroll-moction.main{/*animation: slideUp .8s 1.4s ease-out 1 forwards;*//*opacity: 1;*/}
+.scroll-moction span{background:#fff;width:0.31vw;height:12.5vw;display:inline-block;position:relative;left:0.78vw;}
 .scroll-moction.scroll-black span{background:#000;}
 body.active{overflow:hidden;}
 @media all and (min-width:641px) and (max-width:1024px) {
@@ -295,6 +295,7 @@ body.active{overflow:hidden;}
 
  footer{margin:7.81vw auto 0;}
 }
+
 
 
 
