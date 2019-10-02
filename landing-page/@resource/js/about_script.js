@@ -10,7 +10,7 @@ $(function(){
     reverse: true,
     offset: 1,
     force3D: true,
-    duration: '60%'
+    duration: '40%'
   })
 
   .setTween(tweenPageIntro)

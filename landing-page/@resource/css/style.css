@@ -164,8 +164,8 @@ footer address{color:#000;text-align:center;font-family:'Noto sans KR',sans-seri
 .int-btn .int-tit .int-tit-wrap h2{font-size:38px;}
 .int-btn .int-tit .int-tit-wrap p{font-size:16px;}
 .int-btn .int-tit .go-detail{float:right;font-size:22px;padding-right:29px;background:url('../img/detail_right.png')no-repeat center right;text-transform: none;}
-.int-section-wrap .init-detail.delighter{transform:translateX(-30%);transition:all .8s ease-out;opacity: 0;}
-.int-section-wrap .init-detail-sec.delighter{transform:translateX(-30%);transition:all 1.3s ease-out;opacity: 0;}
+.int-section-wrap .init-detail.delighter{transition:all .8s ease-out;opacity: 0;}
+.int-section-wrap .init-detail-sec.delighter{transition:all 1.3s ease-out;opacity: 0;}
 .int-section-wrap .init-detail.delighter.started{transform:none;opacity:1;}
 .int-section-wrap .init-detail-sec.delighter.started{transform:none;opacity:1;}
 
