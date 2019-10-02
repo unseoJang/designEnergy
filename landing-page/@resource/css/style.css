@@ -94,7 +94,7 @@ body header.color_change-view nav ul li.menu-list a.active::before{background:#0
 .desc{font-family:'Noto Serif', serif;font-size:26.12px;opacity: 0;-webkit-transition: opacity 0.5s;-moz-transition: opacity 0.5s; -ms-transition: opacity 0.5s; transition: opacity 0.5s;}
 .main-footer{color:#fff;z-index:1;position:absolute;bottom:60px;font-weight:400;width:100%;}
 .main-footer div{display:block;margin-left:250px;font-size:22px;}
-.container{margin:120px auto 0;position:relative;}
+.container{margin:0 auto;position:relative;}
 /*.container-wrap{margin:0;}
 */
 /*bullet custom*/
@@ -112,7 +112,7 @@ body header.color_change-view nav ul li.menu-list a.active::before{background:#0
 
 #wrap{/*padding-top:120px;*/}
 .cont-article-wrap{font-family: 'Noto Sans KR', sans-serif;margin:0 auto;max-width:1140px;font-weight:700;font-size:38px;overflow:hidden;}
-.sub-article-wrap{color:#000;font-family: 'Noto Sans KR', sans-serif;padding:80px 0 84px;position:relative;}
+.sub-article-wrap{color:#000;font-family: 'Noto Sans KR', sans-serif;padding:260px 0 84px;position:relative;}
 .sub-article-wrap .container{position:relative;}
 .sub-article-wrap .dot{color:#bf221e;}
 .sub-article-wrap .sub-title-area{margin:0 auto 70px;min-width:1140px;max-width:1140px;font-weight:700;line-height:84px;letter-spacing:-1px;font-size:60px;}
