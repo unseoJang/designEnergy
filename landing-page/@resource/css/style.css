@@ -252,12 +252,48 @@ footer address{color:#000;text-align:center;font-family:'Noto sans KR',sans-seri
     height:122px;
   }
 }
+@keyframes scrollTop{
+  0%{
+    top:249px;
+  }
+  10%{
+    top:249px;
+  }
+  20%{
+    top:249px;
+  }
+  30%{
+    top:299px;
+  }
+  40%{
+    top:249px;
+  }
+  50%{
+    top:299px;
+  }
+  60%{
+    top:249px;
+  }
+  70%{
+    top:299px;
+  }
+  80%{
+    top:249px;
+  }
+  90%{
+    top:299px;
+  }
+  100%{
+    top:249px;
+  }
+}
 
-.scroll-moction{opacity:0;background:url('../img/icon_scroll.png')no-repeat center top;position:absolute;bottom: 0;z-index:2;padding:52px 12px 0 0;height:113px;left:55px;}
+.scroll-moction{background:url('../img/icon_scroll.png')no-repeat center top;position:absolute;bottom: 0;z-index:2;padding:52px 12px 0 0;height:122px;left:55px;animation:scrollHeight 5s 1.5s ease infinite forwards; }
 .scroll-moction.scroll-black{background:url('../img/icon_scroll_black.png')no-repeat center top;top:80px;opacity: 1;width:2px;}
-.scroll-moction.main{animation: slideUp .8s 1.4s ease-out 1 forwards;}
-.scroll-moction span{background:#fff;width:2px;height:50px;display:inline-block;position:relative;left:5px;animation:scrollHeight 5s 1.5s ease infinite forwards; }
+/*.scroll-moction.main{animation: slideUp .8s 0s ease-out 1 forwards;animation:scrollHeight 5s 1.5s ease infinite forwards; }*/
+.scroll-moction span{background:#fff;width:2px;height:150px;display:inline-block;position:relative;left:5px;}
 .scroll-moction.scroll-black span{background:#000;}
+.sec-interior .scroll-moction.scroll-black{animation:scrollTop 5s 1.5s ease infinite forwards; }
 
 
 .sec-interior .scroll-moction.scroll-black{top:249px;}
