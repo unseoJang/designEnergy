@@ -289,11 +289,10 @@ footer address .capital-letter{}
 .scroll-moction span{background:#fff;width:0.31vw;height:12.5vw;display:inline-block;position:relative;left:0.78vw;animation:scrollHeight 5s 1.5s ease infinite forwards; }
 .scroll-moction.scroll-black span{background:#000;}
 body.active{overflow:hidden;}
-
-}
-@media all and (min-width:735px) and (max-width:1024px) {
+@media all and (min-width:641px) and (max-width:1024px) {
  .title{font-size:5.13vw;}
  .main-footer div{font-size:2.44vw;}
+
  footer{margin:7.81vw auto 0;}
 }
 
