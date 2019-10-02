@@ -129,12 +129,12 @@ header{top:0;}
 #fp-nav ul li:nth-of-type(4) span:after{content:"KWANGJU BANK";color:#fff;}
 #fp-nav ul li:nth-of-type(5) span:after{content:"STARBUCKS";color:#fff;}*/
 
-#wrap{padding-top:23.44vw;}
+#wrap{/*padding-top:23.44vw;*/}
 #wrap.arch-wrap{padding:0;}
 .cont-article-wrap{font-family: 'Noto Sans KR', sans-serif;margin:0 auto;font-weight:71400;font-size:5.94vw;overflow:hidden;margin:0 auto;width:100%;}
 .sub-article-wrap{color:#000;font-family: 'Noto Sans KR', sans-serif;position:relative;}
 .sub-article-wrap .dot{color:#bf221e;}
-.sub-article-wrap .sub-title-area{margin:0 auto;font-weight:500;line-height:8.44vw;letter-spacing:-1px;font-size:6.25vw;}
+.sub-article-wrap .sub-title-area{margin:0 auto;padding-top:23.44vw; font-weight:500;line-height:8.44vw;letter-spacing:-1px;font-size:6.25vw;}
 .cont-article-wrap .sub-cont-wrap{color:#000;margin:-1.25vw auto 0;line-height:7.19vw;padding-top:12.5vw;font-size:5.31vw;letter-spacing:-0.5px;max-width:87.5vw;}
 .img-article-wrap{background:url('../img/mo_about_con1.png')no-repeat center center;height:78.13vw;background-size:cover;}
 .cont-article-wrap .cont-article-wrap-sub{overflow:hidden;margin:7.81vw auto 0;max-width:87.5vw;}
@@ -239,7 +239,7 @@ footer address .capital-letter{}
 .re-arti-wrap .re-arti-manual.manual-thid dl:nth-child(2) {height:42.34vw;}
 .re-arti-wrap .re-arti-manual.manual-thid dl dd ol li span.sub-title-length{display:inline-block;float:left;font-size:3.44vw;line-height:4.06vw;}
 .re-arti-wrap .re-arti-manual.manual-thid dl dd ol li span.sub-title-line{display:inline-block;float:left;font-size:3.44vw;line-height:3.75vw;}
-.re-arti-wrap .re-arti-manual .mail{font-size:3.44vw;display:inline-block;background:#000;color:#FFF;text-align:center;line-height:5.69vw;margin-top:1px;width:44.38vw;height:7.19vw;}
+.re-arti-wrap .re-arti-manual .mail{font-size:3.44vw;display:inline-block;background:#000;color:#FFF;text-align:center;line-height:6.69vw;margin-top:1px;width:44.38vw;height:7.19vw;}
 
 .btn-top-wrap{position:fixed;right:6.25vw;bottom:7.66vw;font-size:0;transition:all .3s ease-out;opacity: 1;z-index: 2;}
 .btn-top-wrap.js-hide{opacity: 0;transform:none;}
