@@ -328,7 +328,7 @@ footer address{color:#000;text-align:center;font-family:'Noto sans KR',sans-seri
 /*.scroll-moction.main{animation: slideUp .8s 0s ease-out 1 forwards;animation:scrollHeight 5s 1.5s ease infinite forwards; }*/
 .scroll-moction span{background:#fff;width:2px;height:150px;display:inline-block;position:relative;left:5px;}
 .scroll-moction.scroll-black span{background:#000;}
-.sec-interior .scroll-moction.scroll-black{animation:scrollTop 5s 1.5s ease infinite forwards; }
+.sec-interior .scroll-moction.scroll-black{animation:scrollTop 5s 1.5s ease infinite forwards;z-index:-1; }
 .recruit-scroll-moction.scroll-moction.scroll-black{animation:scrollTopsec 5s 1.5s ease infinite forwards;z-index:-1;}
 
 
