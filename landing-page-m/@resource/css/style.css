@@ -102,7 +102,7 @@ header{top:0;}
 .relative{position:relative;}
 #fullpage{height: 100vh !important;}
 .bg-overlay{background-color:rgba(0, 0, 0, 0.3);position: absolute;top:0;bottom:0;left:0;right:0;z-index:-1;}
-.arch-wrap .bg-overlay{background-color:rgba(0, 0, 0, 0.2);position: absolute;top:0;bottom:0;left:0;right:0;width:100%;height:98vh;z-index:1;}
+.arch-wrap .bg-overlay{background-color:rgba(0, 0, 0, 0.2);position: absolute;top:0;bottom:0;left:0;right:0;width:100%;height:99vh;z-index:1;}
 .v-1{background:url('../img/v_1.jpg')no-repeat center center;background-size:cover;}
 .v-2{background:url('../img/v_2.jpg')no-repeat center center;background-size:cover;}
 .v-3{background:url('../img/v_3.jpg')no-repeat center center;background-size:cover;}
@@ -191,7 +191,7 @@ footer address .capital-letter{}
 .int-section-wrap .init-detail-sec.delighter.started{transform:none;opacity:1;}
 
 .arch-wrap{margin:0 auto;min-width:87.5vw;}
-.arch-arti{background-color:#fff;margin:0 auto;position: relative; margin-top:98vh; min-height: 2.93vh; }
+.arch-arti{background-color:#fff;margin:0 auto;position: relative; margin-top:99vh; min-height: 2.93vh; }
 .arch-arti-wrap{margin:0 auto;}
 .arch-arti-tit{padding-top:12.19vw;font-family:'Noto sans KR',sans-serif;max-width:87.5vw;margin:0 auto;}
 .arch-arti-tit h3{color:#000;font-size:6.25vw;font-weight: 500;line-height:9.38vw;letter-spacing:-2.5px;}
@@ -208,10 +208,10 @@ footer address .capital-letter{}
 .arch-arti h2{position:absolute;font-family:'Noto sans KR',sans-serif;font-weight:700;font-size:6.25vw;line-height:8.59vw;color:#fff;top:-12.56vw;right:9.38vw;text-transform: uppercase;}
 .arch-arti h2.delighter{opacity:1;}
 .arch-arti h2.delighter.started{opacity:0;}
-.arch-wrap .main-art{position:fixed;top:0;left:0;height:98vh;z-index:0;width:100%;background:url('../img/architectural_view_01_01.jpg')no-repeat center center;background-size:cover;}
+.arch-wrap .main-art{position:fixed;top:0;left:0;height:99vh;z-index:0;width:100%;background:url('../img/architectural_view_01_01.jpg')no-repeat center center;background-size:cover;}
 .main-art .main-art-view{position:relative;width:100%; height:100%; -moz-box-sizing:content-box;box-sizing:content-box}
-.main-art .main-art-view .main-sub-view{position:relative; width:100vw; height:98vh; overflow: hidden; background-attachment: fixed;background-size: cover; background-position:center;}
-.main-art .main-art-view img{height:98vh;position:absolute;left:50%;transform:translateX(-50%);}
+.main-art .main-art-view .main-sub-view{position:relative; width:100vw; height:99vh; overflow: hidden; background-attachment: fixed;background-size: cover; background-position:center;}
+.main-art .main-art-view img{height:99vh;position:absolute;left:50%;transform:translateX(-50%);}
 
 .re-cont-img-wrap{background:url('../img/recruit_img_01.jpg')no-repeat center center;background-size:cover;box-sizing:border-box; position: relative;padding-top:79.53vw;margin-top:8.28vw;margin-bottom:0;}
 .re-cont-img-wrap .re-img-01{position:absolute;top:30.63vw;right:67.19vw;}
