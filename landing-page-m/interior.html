@@ -448,7 +448,7 @@
 					</li>
 				</ul>
 			</article>
-			<div id="go-up" class="btn-top-wrap js-hide"><a href="javascript:void(0);" class="btn-top"></a></div>
+			<div id="go-up" class="btn-top-wrap"><a href="javascript:void(0);" class="btn-top"></a></div>
 		</section>
 	</div>
 	<script type="text/javascript">
@@ -496,7 +496,7 @@
 	        // downscroll code
 	        if(wentUp){
 	          // header.addClass('js-hide');
-	          goUp.removeClass('js-hide');
+	          goUp.addClass('js-hide');
 	        }
 	        wentUp = false;
 	        wentDown = true;
@@ -504,7 +504,7 @@
 	        // upscroll code
 	        if(wentDown){
 	          // header.removeClass('js-hide');
-	          goUp.addClass('js-hide');
+	          goUp.removeClass('js-hide');
 	        }
 	        wentUp = true;
 	        wentDown = false;

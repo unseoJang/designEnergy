@@ -245,8 +245,8 @@ footer address .capital-letter{}
 .re-arti-wrap .re-arti-manual.manual-thid dl dd ol li span.sub-title-line{display:inline-block;float:left;font-size:3.44vw;line-height:3.75vw;}
 .re-arti-wrap .re-arti-manual .mail{font-size:3.44vw;display:inline-block;background:#000;color:#FFF;text-align:center;line-height:6.69vw;margin-top:1px;width:44.38vw;height:7.19vw;}
 
-.btn-top-wrap{position:fixed;right:6.25vw;bottom:7.66vw;font-size:0;transition:all .3s ease-out;opacity: 1;z-index: 2;}
-.btn-top-wrap.js-hide{opacity: 0;transform:none;}
+.btn-top-wrap.js-hide{position:fixed;right:6.25vw;bottom:7.66vw;font-size:0;transition:all .3s ease-out;opacity: 1;z-index: 2;}
+.btn-top-wrap{opacity: 0;transform:none;}
 .btn-top-wrap .btn-top{display:inline-block;background:#c8c8c8 url('../img/go_top.png')no-repeat center center;border-radius:7.81vw;background-size:4.53vw 2.81vw; width:10.31vw;height:10.31vw;}
 
 
