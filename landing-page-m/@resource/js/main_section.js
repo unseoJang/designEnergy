@@ -14,6 +14,7 @@ $(document).ready(function () {
     scrollingSpeed: 1000,
     fitToSectionDelay: true,
     continuousVertical:true,
+    dragAndMove: fingersonly,
     onLeave: function (origin, destination, direction) {
       //video[destination - 1].load();
       // console.log(destination);
