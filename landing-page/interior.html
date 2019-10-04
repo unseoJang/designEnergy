@@ -42,22 +42,22 @@
 					</div>
 					<div class="banner cont-article-wrap">
 						<span>Interior by Designenergy</span>
-						<ul>
-							<li><a href="./interior_list/interior_view01.html"><img src="./@resource/img/banner_img_01.jpg"></a></li>
-							<li><a href="./interior_list/interior_view02.html"><img src="./@resource/img/banner_img_02.jpg"></a></li>
-							<li><a href="./interior_list/interior_view03.html"><img src="./@resource/img/banner_img_03.jpg"></a></li>
-							<li><a href="./interior_list/interior_view04.html"><img src="./@resource/img/banner_img_04.jpg"></a></li>
-							<li><a href="./interior_list/interior_view05.html"><img src="./@resource/img/banner_img_05.jpg"></a></li>
-							<li><a href="./interior_list/interior_view06.html"><img src="./@resource/img/banner_img_06.jpg"></a></li>
-							<li><a href="./interior_list/interior_view07.html"><img src="./@resource/img/banner_img_07.jpg"></a></li>
-							<li><a href="./interior_list/interior_view08.html"><img src="./@resource/img/banner_img_08.jpg"></a></li>
-							<li><a href="./interior_list/interior_view09.html"><img src="./@resource/img/banner_img_09.jpg"></a></li>
-							<li><a href="./interior_list/interior_view10.html"><img src="./@resource/img/banner_img_10.jpg"></a></li>
-							<li><a href="./interior_list/interior_view11.html"><img src="./@resource/img/banner_img_11.jpg"></a></li>
-							<li><a href="./interior_list/interior_view12.html"><img src="./@resource/img/banner_img_12.jpg"></a></li>
-							<li><a href="./interior_list/interior_view13.html"><img src="./@resource/img/banner_img_13.jpg"></a></li>
-							<li><a href="./interior_list/interior_view14.html"><img src="./@resource/img/banner_img_14.jpg"></a></li>
-							<li><a href="./interior_list/interior_view15.html"><img src="./@resource/img/banner_img_15.jpg"></a></li>
+						<ul class="thumbnail-navigation">
+							<li><a href="./interior_list/interior_view01.html"><img src="./@resource/img/banner_img_01.jpg" title="STARBUCKS"></a></li>
+							<li><a href="./interior_list/interior_view02.html"><img src="./@resource/img/banner_img_02.jpg" title="JUUN.J"></a></li>
+							<li><a href="./interior_list/interior_view03.html"><img src="./@resource/img/banner_img_03.jpg" title="KWANGJU BANK"></a></li>
+							<li><a href="./interior_list/interior_view04.html"><img src="./@resource/img/banner_img_04.jpg" title="STARBUCKS"></a></li>
+							<li><a href="./interior_list/interior_view05.html"><img src="./@resource/img/banner_img_05.jpg" title="HOLLYS COFFEE"></a></li>
+							<li><a href="./interior_list/interior_view06.html"><img src="./@resource/img/banner_img_06.jpg" title="SEVERANCE HOSPITAL"></a></li>
+							<li><a href="./interior_list/interior_view07.html"><img src="./@resource/img/banner_img_07.jpg" title="brooksbrothers"></a></li>
+							<li><a href="./interior_list/interior_view08.html"><img src="./@resource/img/banner_img_08.jpg" title="STARBUCKS"></a></li>
+							<li><a href="./interior_list/interior_view09.html"><img src="./@resource/img/banner_img_09.jpg" title="STARBUCKS"></a></li>
+							<li><a href="./interior_list/interior_view10.html"><img src="./@resource/img/banner_img_10.jpg" title="STARBUCKS"></a></li>
+							<li><a href="./interior_list/interior_view11.html"><img src="./@resource/img/banner_img_11.jpg" title="STARBUCKS"></a></li>
+							<li><a href="./interior_list/interior_view12.html"><img src="./@resource/img/banner_img_12.jpg" title="Dong-A University"></a></li>
+							<li><a href="./interior_list/interior_view13.html"><img src="./@resource/img/banner_img_13.jpg" title="STARBUCKS"></a></li>
+							<li><a href="./interior_list/interior_view14.html"><img src="./@resource/img/banner_img_14.jpg" title="STARBUCKS"></a></li>
+							<li><a href="./interior_list/interior_view15.html"><img src="./@resource/img/banner_img_15.jpg" title="HYUNDAI AUTOEVER"></a></li>
 						</ul>
 					</div>
 				</div>
@@ -556,7 +556,23 @@
 	    $('html,body').animate({scrollTop:0},500);
 	    e.preventDefault();
 	  })
-		};
+
+	  $('.thumbnail-navigation li a img').hover(function() {
+   	     var title = $(this).attr('title');
+	        $(this).data('tipText', title).removeAttr('title');
+	        $('<p class="tooltip"></p>').text(title).appendTo('body').fadeIn('slow')
+	    }, function() {
+	        $(this).attr('title', $(this).data('tipText'));
+	        $('.tooltip').remove()
+	    }).mousemove(function(e) {
+	        var mousex = e.pageX + 10;
+	        var mousey = e.pageY - 30;
+	        $('.tooltip').css({
+	            top: mousey,
+	            left: mousex
+	        })
+	    })
+	};
 		function scrollJs(){
 		  var winW = $(window).outerWidth();
 		  var startchange = $('.color_change-list');

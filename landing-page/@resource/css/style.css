@@ -147,7 +147,7 @@ footer address{color:#000;text-align:center;font-family:'Noto sans KR',sans-seri
 
 .banner{font-weight:400;font-size:18px;/*margin-top:70px;*/margin-bottom:13px;}
 .banner ul{overflow:hidden;margin-top:20px;}
-.banner ul li{float:left;padding-right: 4px;}
+.banner ul li{float:left;padding-right: 4px;padding-bottom:4px;}
 
 .page-intro.sec-interior{position:relative;z-index:1;}
 /*.interior-wrap{margin-top:120px;}*/
@@ -368,7 +368,7 @@ footer address{color:#000;text-align:center;font-family:'Noto sans KR',sans-seri
 .themify_builder [data-parallax-element-speed] {
   transition:none
 }
-
+.tooltip{display:none;position:absolute;background-color:#000c;padding:5px 10px;color:#fff;font-size:.667em;z-index:3;}
 
 
 
