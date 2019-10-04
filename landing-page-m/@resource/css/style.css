@@ -30,6 +30,7 @@ header .btn_gnb_show{display:inline-block;font-size:0;position:absolute;overflow
 header .btn_gnb_show span{background:#fff;font-size:0;display:inline-block;margin-bottom:0.94vw;height:0.78vw;width:100%;}
 header nav{opacity:0;padding-top:4.84vw;position:fixed;top:0;left:0;width:100%;padding-bottom:4.69vw;background:#fff;height:100vh;overflow:auto;-webkit-transition:opacity 1s,transform .6s;transition:opacity 1s,transform .6s;transform:translateY(-100%);z-index:3;}
 header nav.active{opacity:1;transform:translateY(0);transition:none;transition: opacity .5s,transform .6s;top:0;overflow-x:hidden;z-index:4;}
+header nav h1 a{top:4.78vw;position:absolute;}
 header.main nav.active{transform:translateY(0);}
 .mobile-nav-wrap .nav-top-menu{height:10.94vw;overflow:hidden;}
 .m-menu-btn.on span,.m-search-closebtn.on span{background-color:#fff;margin-bottom: 1.56vw;}
