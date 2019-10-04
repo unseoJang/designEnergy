@@ -250,41 +250,7 @@ footer address .capital-letter{}
 .btn-top-wrap .btn-top{display:inline-block;background:#c8c8c8 url('../img/go_top.png')no-repeat center center;border-radius:7.81vw;background-size:4.53vw 2.81vw; width:10.31vw;height:10.31vw;}
 
 
-@keyframes scrollTop{
-  0%{
-    margin-top:71.94vw;
-  }
-  10%{
-    margin-top:71.94vw;
-  }
-  20%{
-    margin-top:80vw;
-  }
-  30%{
-    margin-top:71.94vw;
-  }
-  40%{
-    margin-top:80vw;
-  }
-  50%{
-    margin-top:71.94vw;
-  }
-  60%{
-    margin-top:80vw;
-  }
-  70%{
-    margin-top:71.94vw;
-  }
-  80%{
-    margin-top:80vw;
-  }
-  90%{
-   margin-top:71.94vw;
-  }
-  100%{
-    margin-top:71.94vw;
-  }
-}
+
 @keyframes scrollTop{
   0%{
     margin-top:80.94vw;
@@ -293,25 +259,25 @@ footer address .capital-letter{}
     margin-top:80.94vw;
   }
   20%{
-    margin-top:100vw;
+    margin-top:90vw;
   }
   30%{
     margin-top:80.94vw;
   }
   40%{
-    margin-top:100vw;
+    margin-top:90vw;
   }
   50%{
     margin-top:80.94vw;
   }
   60%{
-    margin-top:100vw;
+    margin-top:90vw;
   }
   70%{
     margin-top:80.94vw;
   }
   80%{
-    margin-top:100vw;
+    margin-top:90vw;
   }
   90%{
    margin-top:80.94vw;
