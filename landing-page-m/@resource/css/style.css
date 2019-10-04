@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,600,700|Noto+Serif&display=swap&subset=korean');
 @import url('https://fonts.googleapis.com/css?family=Poppins:600&display=swap');
-@media screen and (min-width: 640px){}
 .standard_about{	position:absolute;
 	text-align:center;
 	opacity: 0.3;
