@@ -51,6 +51,7 @@ header.view-header.color_change-view .m-menu-btn.on span{background-color:#fff;}
 .nav-wrap{margin-top:31.09vw;font-size:8.59vw;text-align:center;font-family: 'Poppins', sans-serif;}
 .nav-wrap ul li a{color:#000;line-height:13.44vw;}
 .nav-footer{width:100%;/*max-width:87.5vw;*/margin:37.5vw 6.25vw 0;}
+.main .nav-footer{margin: 27.5vw 6.25vw 0;}
 .nav-footer address ul li{color:#000;font-family:'Noto Sans KR',sans-serif;font-weight:400;line-height:4.38vw;font-size:2.81vw;}
 .nav-copyright{margin-top:5.94vw;color:#000;font-family:'Noto Sans KR',sans-serif;font-weight:400;line-height:4.38vw;font-size:2.81vw;}
 /*main-effect*/
