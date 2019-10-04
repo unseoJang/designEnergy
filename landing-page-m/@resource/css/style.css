@@ -287,7 +287,8 @@ footer address .capital-letter{}
 .scroll-moction.scroll-black{background:url('../img/icon_scroll_black.png')no-repeat center top;top:43.28vw;opacity: 1;width:0.31vw}
 .scroll-moction.main{/*animation: slideUp .8s 1.4s ease-out 1 forwards;*//*opacity: 1;*/}
 .scroll-moction span{background:#fff;width:0.31vw;height:32.5vw;display:inline-block;position:relative;left:0.78vw;}
-.scroll-moction.scroll-black span{background:#000;}
+.scroll-moction span{}
+.scroll-moction.main span{height:18.5vw;}
 body.active{overflow:hidden;}
 @media all and (min-width:641px) and (max-width:1024px) {
  .title{font-size:5.13vw;}
