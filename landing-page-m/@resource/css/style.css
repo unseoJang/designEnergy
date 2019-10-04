@@ -29,7 +29,7 @@ header.main{position:fixed;}
 header .btn_gnb_show{display:inline-block;font-size:0;position:absolute;overflow:hidden;right:0;/*width:38px;height:27px;*/}
 header .btn_gnb_show span{background:#fff;font-size:0;display:inline-block;margin-bottom:0.94vw;height:0.78vw;width:100%;}
 header nav{opacity:0;padding-top:4.84vw;position:fixed;top:0;left:0;width:100%;padding-bottom:4.69vw;background:#fff;height:100vh;overflow:auto;-webkit-transition:opacity 1s,transform .6s;transition:opacity 1s,transform .6s;transform:translateY(-100%);z-index:3;}
-header nav.active{opacity:1;transform:translateY(0);transition:none;transition: opacity .5s,transform .6s;top:0;}
+header nav.active{opacity:1;transform:translateY(0);transition:none;transition: opacity .5s,transform .6s;top:0;overflow-x:hidden;}
 header.main nav.active{transform:translateY(0);}
 .mobile-nav-wrap .nav-top-menu{height:10.94vw;overflow:hidden;}
 .m-menu-btn.on span,.m-search-closebtn.on span{background-color:#fff;margin-bottom: 1.56vw;}
@@ -282,12 +282,46 @@ footer address .capital-letter{}
     margin-top:71.94vw;
   }
 }
+@keyframes scrollTopsec{
+  0%{
+    margin-top:11.94vw;
+  }
+  10%{
+    margin-top:11.94vw;
+  }
+  20%{
+    margin-top:50vw;
+  }
+  30%{
+    margin-top:11.94vw;
+  }
+  40%{
+    margin-top:50vw;
+  }
+  50%{
+    margin-top:11.94vw;
+  }
+  60%{
+    margin-top:50vw;
+  }
+  70%{
+    margin-top:11.94vw;
+  }
+  80%{
+    margin-top:50vw;
+  }
+  90%{
+   margin-top:11.94vw;
+  }
+  100%{
+    margin-top:11.94vw;
+  }
+}
 
 .scroll-moction{opacity:1;background:url('../img/icon_scroll.png')no-repeat center top;background-size:1.88vw 7.5vw;position:absolute;top:35%;z-index:2;padding:9.69vw 1.88vw 0 0;height:27.19vw;width:0.31vw;/*left:3.28vw;*/left:50%;margin-left:-47vw;animation:scrollTop 5s 1.5s ease infinite forwards;margin-top:71.94vw;}
-.scroll-moction.scroll-black{background:url('../img/icon_scroll_black.png')no-repeat center top;top:43.28vw;opacity: 1;width:0.31vw}
+.scroll-moction.scroll-black{background:url('../img/icon_scroll_black.png')no-repeat center top;top:43.28vw;opacity: 1;width:0.31vw;animation:scrollTopsec 5s 1.5s ease infinite forwards;margin-top:41.94vw;}
 .scroll-moction.main{/*animation: slideUp .8s 1.4s ease-out 1 forwards;*//*opacity: 1;*/}
 .scroll-moction span{background:#fff;width:0.31vw;height:32.5vw;display:inline-block;position:relative;left:0.78vw;}
-.scroll-moction span{}
 .scroll-moction.main span{height:18.5vw;}
 body.active{overflow:hidden;}
 @media all and (min-width:641px) and (max-width:1024px) {
