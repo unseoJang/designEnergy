@@ -457,6 +457,39 @@
 	</div>
 	<!-- <script type="text/javascript" src="./@resource/js/scroll.js"></script> -->
 	<script type="text/javascript">
+		$(document).ready(function(){
+		    $("#sticker").sticky({topSpacing:0});
+		  });
+		$(window).scroll(function () {
+		 var scrollValue = $(document).scrollTop(); 
+		 console.log(scrollValue); 
+		});
+		var tbLocalScript = {
+		"isAnimationActive"       : "1",
+		"isParallaxActive"        : "1",
+		"isParallaxScrollActive"  : "1",
+		"isStickyScrollActive"    : "1",
+		"animationInviewSelectors": [
+			".module.wow"
+		],
+		"fullwidth_support"       : "1",
+		"fullwidth_container"     : "body",
+		"loadScrollHighlight"     : "1",
+		"addons"                  : {
+			"typewriter": {
+				"selector": "[data-typer-targets]",
+			}
+		},
+		"breakpoints"             : {
+			"tablet_landscape": [
+				620, "1024"
+			],
+			"tablet"          : [
+				532, "716"
+			],
+			"mobile"          : "414"
+		},
+	};
 		$(function(){
 			 initPage();
 			scrollJs();
