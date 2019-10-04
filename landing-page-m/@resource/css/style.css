@@ -228,7 +228,7 @@ footer address .capital-letter{}
 .re-arti-wrap .re-arti-manual dt{opacity:1;font-size:3.75vw;line-height:6.25vw;margin-bottom:2.81vw;}
 .re-arti-wrap .re-arti-manual dd ol{margin-bottom:3.13vw;}
 .re-arti-wrap .re-arti-manual dd ul li,.re-arti-wrap .re-arti-manual dd ol li{margin-bottom:1.09vw;}
-.re-arti-wrap .re-arti-manual .manual-wrap ul li p{background:url('../img/recruit_icon_bar.png')no-repeat left center;display:inline-block;padding-left: 1.56vw;}
+.re-arti-wrap .re-arti-manual .manual-wrap ul li p{/*background:url('../img/recruit_icon_bar.png')no-repeat left center;*/display:inline-block;/*padding-left: 2.56vw;*/}
 .re-arti-wrap .re-arti-manual dl:nth-child(3) > .sub-title {margin-top:7.81vw;}
 .re-arti-wrap .re-arti-manual dd li p{font-size:3.44vw;line-height:3.75vw;}
 .re-arti-wrap .re-arti-manual dd li p.sub-address-wrap{float:left;width:68.75vw;line-height: 4.38vw;margin-left:1.56vw;}
