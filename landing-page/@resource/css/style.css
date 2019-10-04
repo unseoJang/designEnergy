@@ -199,7 +199,7 @@ footer address{color:#000;text-align:center;font-family:'Noto sans KR',sans-seri
 
 .re-cont-img-wrap{background:url('../img/recruit_img_01.jpg')no-repeat center center;background-size:cover;box-sizing:border-box; position: relative;padding-top:479px;}
 .re-cont-img-wrap .re-img-01{position:absolute;top:196px;right:430px;}
-.re-arti-wrap{width:1140px;margin:0 auto 100px;font-family: 'Noto sans KR', sans-serif;font-weight:400;padding-top:203px;}
+.re-arti-wrap{width:1140px;margin:0 auto 35px;font-family: 'Noto sans KR', sans-serif;font-weight:400;padding-top:203px;}
 .re-arti-wrap h2{color:#000;font-size:38px;font-weight:400;line-height:50px;letter-spacing:-0.3px;}
 .re-arti-wrap .re-arti-manual{overflow:hidden;padding-top:74px;}
 .re-arti-wrap .re-arti-manual dl{color:#000;float:left;border-bottom:1px solid #000;margin-right:34px;width:357px;height:152px;}
