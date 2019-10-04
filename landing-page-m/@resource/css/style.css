@@ -114,7 +114,7 @@ header{top:0;}
 .home-text{color:#fff;z-index:2;}
 .title{font-size:8.13vw;font-family:'Noto Sans KR', sans-serif;}
 .desc{font-family:'Noto Serif', serif;font-size:4.06vw;}
-.main-footer{color:#fff;z-index:1;position:absolute;bottom:0;font-weight:400;width:100%;}
+.main-footer{color:#fff;z-index:1;/*position:absolute;*/bottom:0;font-weight:400;width:100%;}
 .main-footer div{margin:0 auto;max-width:87.5vw;font-size:3.44vw;}
 .container-wrap{margin:0;}
 
