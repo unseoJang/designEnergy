@@ -45,7 +45,7 @@ function initPage(){
         // downscroll code
         if(wentUp){
           // header.addClass('js-hide');
-          goUp.removeClass('js-hide');
+          // goUp.removeClass('js-hide');
         }
         wentUp = false;
         wentDown = true;
@@ -53,7 +53,7 @@ function initPage(){
         // upscroll code
         if(wentDown){
           // header.removeClass('js-hide');
-          goUp.addClass('js-hide');
+          // goUp.addClass('js-hide');
         }
         wentUp = true;
         wentDown = false;
