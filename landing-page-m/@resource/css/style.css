@@ -29,7 +29,7 @@ header.main{position:fixed;}
 header .btn_gnb_show{display:inline-block;font-size:0;position:absolute;overflow:hidden;right:0;/*width:38px;height:27px;*/}
 header .btn_gnb_show span{background:#fff;font-size:0;display:inline-block;margin-bottom:0.94vw;height:0.78vw;width:100%;}
 header nav{opacity:0;padding-top:4.84vw;position:fixed;top:0;left:0;width:100%;padding-bottom:4.69vw;background:#fff;height:100vh;overflow:auto;-webkit-transition:opacity 1s,transform .6s;transition:opacity 1s,transform .6s;transform:translateY(-100%);z-index:3;}
-header nav.active{opacity:1;transform:translateY(0);transition:none;transition: opacity .5s,transform .6s;top:0;overflow-x:hidden;}
+header nav.active{opacity:1;transform:translateY(0);transition:none;transition: opacity .5s,transform .6s;top:0;overflow-x:hidden;z-index:4;}
 header.main nav.active{transform:translateY(0);}
 .mobile-nav-wrap .nav-top-menu{height:10.94vw;overflow:hidden;}
 .m-menu-btn.on span,.m-search-closebtn.on span{background-color:#fff;margin-bottom: 1.56vw;}
@@ -42,6 +42,7 @@ header.main .m-menu-btn,header.main .m-search-close{margin:0;z-index:4;}
 .m-menu-btn.on,.m-search-close.on{background:#000;}
 header.view-header.color_change-view .m-menu-btn.on span{background-color:#fff;}
 .m-menu-btn .m-menu-btn-wrap,.m-search-close .m-menu-btn-wrap{position:absolute;left:50%;margin-left:-2.8vw;top:2.27vw;/*overflow:hidden;*/margin-top:0.31vw;}
+.m-menu-btn-wrap.out{z-index:0;}
 .main .m-menu-btn span,.main .m-search-close span{background-color:#fff;}
 .m-menu-btn span,.m-search-close span{background-color:#000;}
 .m-menu-btn.on .one,.m-search-close.on .one{-webkit-transform: translateY(1.64vw) rotateZ(135deg);transform: translateY(1.64vw) rotateZ(135deg);}
