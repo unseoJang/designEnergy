@@ -476,8 +476,6 @@
 	        goUp = $('#go-up'),
 	        wentUp = true,
 	        wentDown = false;
-	       	scrollHeight = $(document).height();
-			scrollPosition = $(window).height() + $(window).scrollTop();
 	    $(window).scroll(function(event){
 
 	      if($('nav.mobile').hasClass('open')){
@@ -512,11 +510,6 @@
 	        wentDown = false;
 	      }
 	      lastScrollTop = st;
-	      if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
-				goUp.removeClass('js-hide');
-			} else {
-				goUp.addClass('js-hide');
-			}
 	    });
 	  });
 
