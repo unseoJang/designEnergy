@@ -92,7 +92,7 @@ function scrollJs(){
 
 function naviActi(){
   $('.m-menu-btn').click(function(e){
-    $(this).toggleClass('on');
+    // $(this).toggleClass('on');
     $('nav').toggleClass('active');
   });
 
