@@ -967,9 +967,9 @@
                         //is the movement greater than the minimum resistance to scroll?
                         if (Math.abs(touchStartY - touchEndY) > ($window.height() / 100 * options.touchSensitivity)) {
                             if (touchStartY > touchEndY) {
-                                scrolling('down', scrollable);
-                            } else if (touchEndY > touchStartY) {
                                 scrolling('up', scrollable);
+                            } else if (touchEndY > touchStartY) {
+                                scrolling('down', scrollable);
                             }
                         }
                     }
