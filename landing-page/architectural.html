@@ -41,10 +41,10 @@
 					</p>
 					<div class="banner cont-article-wrap">
 						<span>Architectural by Designenergy</span>
-						<ul>
-							<li><a href="./architectural_list/architectural_view01.html"><img src="./@resource/img/archite_banner_img_01.jpg"></a></li>
-							<li><a href="./architectural_list/architectural_view02.html"><img src="./@resource/img/archite_banner_img_02.jpg"></a></li>
-							<li><a href="./architectural_list/architectural_view03.html"><img src="./@resource/img/archite_banner_img_03.jpg"></a></li>
+						<ul class="thumbnail-navigation">
+							<li><a href="./architectural_list/architectural_view01.html"><img src="./@resource/img/archite_banner_img_01.jpg" title="STARBUCKS"></a></li>
+							<li><a href="./architectural_list/architectural_view02.html"><img src="./@resource/img/archite_banner_img_02.jpg" title="JUUN.J"></a></li>
+							<li><a href="./architectural_list/architectural_view03.html"><img src="./@resource/img/archite_banner_img_03.jpg" title="STARBUCKS"></a></li>
 						</ul>
 					</div>
 					<div class="scroll-moction scroll-black " data-effect="slideUp">
@@ -192,6 +192,21 @@
 	  });
 
 	  let goUp = $('#go-up');
+	  $('.thumbnail-navigation li a img').hover(function() {
+   	     var title = $(this).attr('title');
+	        $(this).data('tipText', title).removeAttr('title');
+	        $('<p class="tooltip"></p>').text(title).appendTo('body').fadeIn('slow')
+	    }, function() {
+	        $(this).attr('title', $(this).data('tipText'));
+	        $('.tooltip').remove()
+	    }).mousemove(function(e) {
+	        var mousex = e.pageX + 10;
+	        var mousey = e.pageY - 30;
+	        $('.tooltip').css({
+	            top: mousey,
+	            left: mousex
+	        })
+	    })
 
 	  goUp.click(function(e){
 	    $('html,body').animate({scrollTop:0},500);
