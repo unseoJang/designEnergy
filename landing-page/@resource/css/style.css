@@ -170,7 +170,7 @@ footer address{color:#000;text-align:center;font-family:'Noto sans KR',sans-seri
 .int-section-wrap .init-detail-sec.delighter.started{transform:none;opacity:1;}
 
 .arch-wrap{margin:0 auto;min-width:1140px;}
-.arch-arti{background-color:#fff;margin:0 auto;position: relative; margin-top:106vh; min-height: 50vh; }
+.arch-arti{background-color:#fff;margin:0 auto;position: relative; margin-top:104vh; min-height: 50vh; }
 .arch-arti-wrap{width:1140px;margin:0 auto;}
 .arch-arti-tit{padding-top:135px;font-family:'Noto sans KR',sans-serif;}
 .arch-arti-tit h3{color:#000;font-size:60px;font-weight: 700;line-height:60px;letter-spacing:-2.5px;}
@@ -190,7 +190,7 @@ footer address{color:#000;text-align:center;font-family:'Noto sans KR',sans-seri
 .arch-arti-wrap ul li p.category-tit{color:#000;}
 .arch-arti .go-about-btn{display:inline-block;text-align:center;color:#c8c8c8;font-size:28px;font-family:'Lato',sans-serif;line-height:20px;background:url('../img/Arch_view_icon_btn.png')no-repeat left center;padding-left:31px;margin-top:60px;line-height:35px;transition:all .5s ease-in-out;-webkit-transition:all .5s ease-in-out;}
 .arch-arti .go-about-btn:hover{background:url('../img/Arch_view_icon_btn_hover.png')no-repeat left center;color:#000;transition:all .5s ease-out;-webkit-transition:all .5s ease-out;}
-.arch-arti h2{position:absolute;font-family:'Noto sans KR',sans-serif;font-weight:700;font-size:40px;line-height:55px;color:#fff;top:-10%;right:60px;}
+.arch-arti h2{position:absolute;font-family:'Noto sans KR',sans-serif;font-weight:700;font-size:40px;line-height:55px;color:#fff;top:-6.5%;right:60px;}
 .arch-wrap .main-art{position:fixed;top:0;height:100vh;z-index:0;width:100%;-ms-height:99.99%;/*background:url('../img/Architectural_view_01_01.jpg')no-repeat center center;background-size:cover;*/}
 .main-art .main-art-view{position:relative;width:100%; height:100%; -moz-box-sizing:content-box;box-sizing:content-box}
 .main-art .main-art-view .main-sub-view{position:relative; width:100vw; height:100vh; overflow: hidden; background-attachment: fixed;background-size: cover; background-position:center;}
