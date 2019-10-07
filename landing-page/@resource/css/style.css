@@ -368,7 +368,7 @@ footer address{color:#000;text-align:center;font-family:'Noto sans KR',sans-seri
 .themify_builder [data-parallax-element-speed] {
   transition:none
 }
-.tooltip{display:none;position:absolute;background-color:#000c;padding:5px 10px;color:#fff;font-size:.667em;z-index:3;}
+.tooltip{display:none;position:absolute;background-color:#000;padding:5px 10px;color:#fff;font-size:.667em;z-index:3;}
 
 
 
