@@ -1,4 +1,11 @@
 $(document).ready(function () {
+    // $.ajax({
+    //     url : "./@include/header.html",
+    //     success : function(result){
+    //         $('.header').html(result);
+    //         naviActi();
+    //     }
+    // });
   $("header").addClass('load-effect');
   //$(".mobile-header").addClass('load-effect');
   var mobilecheck = function () {

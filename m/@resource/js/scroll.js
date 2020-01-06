@@ -91,7 +91,7 @@ function scrollJs(){
   }
 
 function naviActi(){
-  $('.m-menu-btn').click(function(e){
+  $('.m-menu-btn').on("click",function(e){
     // $(this).toggleClass('on');
     $('nav').toggleClass('active');
   });
