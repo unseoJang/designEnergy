@@ -1,6 +1,13 @@
 $(document).ready(function () {
     //$('header').load('./@include/header.html');
     //document.getElementById("header").innerHTML='<nav><ul><li class="menu-list"><a href="about.html">About</a></li><li class="menu-list"><a href="interior.html">Interior</a></li><li class="menu-list"><a href="architectural.html">Architectural</a></li><li class="menu-list"><a href="recruit.html">Recruit</a></li></ul></nav>';
+    $.ajax({
+        url : "./@include/header.html",
+        success : function(result){
+            $('header').html(result);
+            naviActi();
+        }
+    });
     $("header").addClass('load-effect');
   //$(".mobile-header").addClass('load-effect');
     var mobilecheck = function () {
