@@ -5,7 +5,7 @@
   opacity: 0.3;
   z-index:0;
   top:0;
-  /*display:none;*/}
+  display:none;}
 /*header*/
 body header {position:fixed;z-index:700;top:0;opacity:0;transform:translateY(-100px);transition:opacity 1s, transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);width:100%;margin:0 auto; min-width:1140px;}
 body header h1{float:left;text-align:center;}
