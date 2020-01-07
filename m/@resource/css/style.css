@@ -295,6 +295,8 @@ footer address .capital-letter{}
 body.active{overflow:hidden;}
 
 .about-us-wrap{font-family:'Noto Sans KR', sans-serif;background:#fff;}
+.about-us-wrap.contents-wrap{padding-bottom:0}
+.about-us-wrap article{padding-bottom:2vw;}
 .about-us-wrap article h2{width:87.5vw;margin:0 auto 5.78vw;font-size:4.69vw;color:#000;padding-top:5.94vw;border-top:1px solid #cccc;line-height:4.5vw;letter-spacing:-.4px;}
 .about-us-wrap .box-wrap p{font-size:3.44vw;line-height:5vw;color:#000;width:87.5vw;margin:5.7vw auto 9.41vw;letter-spacing:-.4px;}
 .about-us-wrap .continues{text-align:center;font-size:4.38vw;}
@@ -318,19 +320,20 @@ body.active{overflow:hidden;}
 .page-intro.sec-interior{z-index:1;}
 .num-wrap{text-align:center;}
 .num-wrap ul{display:inline-block;}
-.num-wrap ul li{float:left;margin-right:4.69vw;}
+.num-wrap ul li{float:left;}
+.num-wrap ul li:nth-child(2) a{margin:0 5vw;}
 .num-wrap ul li:last-child{margin:0;}
 .num-wrap ul li a.active{color:#000;border-bottom:0.47vw solid #000;}
-.num-wrap ul li a{font-size:5vw;color:#c5c5c5;}
+.num-wrap ul li a{font-size:5vw;color:#c5c5c5;display:inline-block;width:5.38vw;font-family:'Noto sans KR',sans-serif;line-height:9vw;}
 
-footer{margin:9.3vw auto;}
+footer{margin:10.3vw auto;}
 footer address{letter-spacing:1.1px;}
 
 @media all and (min-width:641px) and (max-width:1024px) {
  .title{font-size:5.13vw;}
  .main-footer div{font-size:2.44vw;}
 
- footer{margin:9.81vw auto;}
+ footer{margin:10.81vw auto;}
 }
 
 
