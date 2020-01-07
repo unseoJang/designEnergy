@@ -112,7 +112,7 @@ body header.color_change-view nav ul li.menu-list a.active::before{background:#0
 
 #wrap{/*padding-top:120px;*/}
 .cont-article-wrap{font-family: 'Noto Sans KR', sans-serif;margin:0 auto;max-width:1140px;font-weight:700;font-size:38px;overflow:hidden;}
-.sub-article-wrap{color:#000;font-family: 'Noto Sans KR', sans-serif;padding:260px 0 84px;position:relative;}
+.sub-article-wrap{color:#000;font-family: 'Noto Sans KR', sans-serif;padding:200px 0 84px;position:relative;}
 .sub-article-wrap .container{position:relative;}
 .sub-article-wrap .dot{color:#bf221e;}
 .sub-article-wrap .sub-title-area{margin:0 auto 70px;min-width:1140px;max-width:1140px;font-weight:700;line-height:84px;letter-spacing:-1px;font-size:60px;}
