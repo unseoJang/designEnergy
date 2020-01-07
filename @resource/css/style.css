@@ -379,7 +379,7 @@ footer address{color:#000;text-align:center;font-family:'Noto sans KR',sans-seri
 .about-us-wrap article:last-child{padding-bottom:70px}
 .about-us-wrap h2{font-size:28px;color:#000;font-weight:bold;line-height:45px;}
 .about-us-wrap .box-wrap{margin-top:23px;}
-.about-us-wrap .box-wrap p{margin-top:20px;font-size:15px;color:#000;line-height:18px;letter-spacing:-0.1px;}
+.about-us-wrap .box-wrap p{margin-top:20px;font-size:15px;color:#000;line-height:18px;letter-spacing:-0.1px;font-family: 'Noto Sans KR', sans-serif;}
 .about-us-wrap .continues{text-align:center;font-size:18px;color:#b6b6b6;margin:80px 0 0;}
 .num-wrap{text-align:center;display:block;overflow:hidden;margin-bottom: 90px;}
 .num-wrap ul{display:inline-block;}
