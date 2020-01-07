@@ -17,16 +17,46 @@
 </head>
 <body>
 	<!-- <div class="standard_about"><img src="./@resource/img/3_pc_1_Interior_1.jpg"></div> -->
-	<header class="about">
-		<h1><a href="index.html"><img src="./@resource/img/logo.png" alt="logo"></a></h1>
+	<header>
+		<div class="header-btn-wrap">
+			<h1><a href="index.html"><img src="./@resource/img/logo.png"></a></h1>
+			<div class="m-menu-btn trs-prop-bg trs-du-06">
+				<div class="m-menu-btn-wrap">
+					<span class="one trs-prop-transform trs-du-06"></span>
+					<span class="two trs-prop-opacity trs-du-06"></span>
+					<span class="three trs-prop-transform trs-du-06"></span>
+				</div>
+			</div>
+		</div>
 		<nav>
-			<ul>
-				<li class="menu-list"><a href="about.html">About</a></li>
-				<li class="menu-list"><a href="interior.html">Interior</a></li>
-				<li class="menu-list"><a href="architectural.html">Architectural</a></li>
-				<li class="menu-list"><a href="javascript:void(0);" class="active">About Us</a></li>
-				<li class="menu-list"><a href="recruit.html">Recruit</a></li>
-			</ul>
+			<div class="nav-header mobile-nav-menu">
+				<h1><a href="index.html"><img src="./@resource/img/logo.png"></a></h1>
+				<div class="m-menu-btn trs-prop-bg trs-du-06 on">
+					<div class="m-menu-btn-wrap">
+				      <span class="one trs-prop-transform trs-du-06"></span>
+				      <span class="two trs-prop-opacity trs-du-06"></span>
+				      <span class="three trs-prop-transform trs-du-06"></span>
+			    	</div>
+			    </div>
+			</div>
+			<div class="nav-wrap">
+				<ul>
+					<li><a href="about.html">About</a></li>
+					<li><a href="interior.html">Interior</a></li>
+					<li><a href="architectural.html">Architectural</a></li>
+					<li><a href="recruit.html">Recruit</a></li>
+				</ul>
+			</div>
+			<div class="nav-footer">
+				<address>
+					<ul>
+						<li>02-477-8220</li>
+						<li>de@d-energy.co.kr</li>
+						<li>서울특별시 송파구 백제고분로 117 정일빌딩</li>
+					</ul>
+				</address>
+				<div class="nav-copyright">Copyright © DesignEnergy All rights reserved.</div>
+			</div>
 		</nav>
 	</header>
 	<div id="wrap"class="wrapper">
@@ -46,8 +76,8 @@
 				<div class="box-wrap">
 					<img src="./@resource/img/about_us/about_us_02.jpg" alt="">
 					<p>
-						Adieu 2019 Hello 2020 (주)디자인에너지 송년의 밤을 HOTEL PRIMA 옴니버스 B홀에서 개최하였습니다.<br/>
-						많은 직원들이 참석하여 2019의 마지막밤을 더욱 뜻 깊게 마무리 하고 다가올 2020에 더욱 발전하는 디자인에너지를 바라면서 즐거운 시간을 보냈습니다.
+						Adieu 2019 Hello 2020 (주)디자인에너지 송년의 밤을<br/> HOTEL PRIMA 옴니버스 B홀에서 개최하였습니다.<br/>
+						많은 직원들이 참석하여 2019의 마지막밤을 더욱 뜻 깊게<br/> 마무리 하고 다가올 2020에 더욱 발전하는 디자인에너지를<br/> 바라면서 즐거운 시간을 보냈습니다.
 					</p>
 				</div>
 				<p class="continues">...The story continues</p>
@@ -57,7 +87,7 @@
 			<address>Copyright © DesignEnergy All rights reserved.</address>
 		</footer>
 	</div>
-	<!-- <script type="text/javascript" src="./@resource/js/scroll.js"></script> -->
+	<script type="text/javascript" src="./@resource/js/scroll.js"></script>
 	<script type="text/javascript" src="./@resource/lip/delighters/delighters.min.js"></script>
 	<script type="text/javascript" src="./@resource/lip/sticky/sticky.js"></script>
 	<script type="text/javascript" src="./@resource/js/about_script.js"></script>
@@ -70,35 +100,5 @@
 		$(document).ready(function(){
 		    $("#sticker").sticky({topSpacing:0});
 		  });
-		$(window).scroll(function () {
-		 var scrollValue = $(document).scrollTop(); 
-		 console.log(scrollValue); 
-		});
-		var tbLocalScript = {
-		"isAnimationActive"       : "1",
-		"isParallaxActive"        : "1",
-		"isParallaxScrollActive"  : "1",
-		"isStickyScrollActive"    : "1",
-		"animationInviewSelectors": [
-			".module.wow"
-		],
-		"fullwidth_support"       : "1",
-		"fullwidth_container"     : "body",
-		"loadScrollHighlight"     : "1",
-		"addons"                  : {
-			"typewriter": {
-				"selector": "[data-typer-targets]",
-			}
-		},
-		"breakpoints"             : {
-			"tablet_landscape": [
-				620, "1024"
-			],
-			"tablet"          : [
-				532, "716"
-			],
-			"mobile"          : "414"
-		},
-	};
 	</script>
 </html>
