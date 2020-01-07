@@ -44,6 +44,7 @@
 					<li><a href="about.html">About</a></li>
 					<li><a href="interior.html">Interior</a></li>
 					<li><a href="architectural.html">Architectural</a></li>
+					<li><a href="about_us.html" class="active">About Us</a></li>
 					<li><a href="recruit.html">Recruit</a></li>
 				</ul>
 			</div>
@@ -60,7 +61,7 @@
 		</nav>
 	</header>
 	<div id="wrap"class="wrapper">
-		<section class="page-intro delighter sec-interior" data-delighter="">
+		<section class="page-intro delighter sec-interior" data-delighter="" style="z-index:-1;">
 			<article id="sticker" class="sub-article-wrap sticky-wrapper interior-wrap">
 				<div class="container container-wrap">
 					<p class="sub-title-area">
@@ -72,14 +73,16 @@
 		</section>
 		<section class="about-us-wrap">
 			<article>
-				<h2>디자인에너지 2019 송년회</h2>
-				<div class="box-wrap">
-					<img src="./@resource/img/about_us/about_us_02.jpg" alt="">
-					<p>
-						Adieu 2019 Hello 2020 (주)디자인에너지 송년의 밤을<br/> HOTEL PRIMA 옴니버스 B홀에서 개최하였습니다.<br/>
-						많은 직원들이 참석하여 2019의 마지막밤을 더욱 뜻 깊게<br/> 마무리 하고 다가올 2020에 더욱 발전하는 디자인에너지를<br/> 바라면서 즐거운 시간을 보냈습니다.
-					</p>
-				</div>
+				<a href="about_us_list/about_us_list_01.html">
+					<h2>디자인에너지 2019 송년회</h2>
+					<div class="box-wrap">
+						<img src="./@resource/img/about_us/about_us_02.jpg" alt="">
+						<p>
+							Adieu 2019 Hello 2020 (주)디자인에너지 송년의 밤을<br/> HOTEL PRIMA 옴니버스 B홀에서 개최하였습니다.<br/>
+							많은 직원들이 참석하여 2019의 마지막밤을 더욱 뜻 깊게<br/> 마무리 하고 다가올 2020에 더욱 발전하는 디자인에너지를<br/> 바라면서 즐거운 시간을 보냈습니다.
+						</p>
+					</div>
+				</a>
 				<p class="continues">...The story continues</p>
 			</article>
 		</section>
@@ -87,7 +90,7 @@
 			<address>Copyright © DesignEnergy All rights reserved.</address>
 		</footer>
 	</div>
-	<script type="text/javascript" src="./@resource/js/scroll.js"></script>
+	<!-- <script type="text/javascript" src="./@resource/js/scroll.js"></script> -->
 	<script type="text/javascript" src="./@resource/lip/delighters/delighters.min.js"></script>
 	<script type="text/javascript" src="./@resource/lip/sticky/sticky.js"></script>
 	<script type="text/javascript" src="./@resource/js/about_script.js"></script>
@@ -100,5 +103,84 @@
 		$(document).ready(function(){
 		    $("#sticker").sticky({topSpacing:0});
 		  });
+		/*
+		* Init page
+		*/
+		$(function(){
+			initPage();
+			naviActi();
+		});
+		function initPage(){
+
+		  /*
+		  * Used in multiple functions
+		  */
+		  let docWidth = $(window).width();
+
+		  /*
+		  * Header scroll down/up function
+		  * https://codepen.io/josiahruddell/pen/piFfq
+		  * with edits to control timing and not fire on every scroll.
+		  */
+		  $(function(){
+		  	var lastScrollTop = 0, 
+		  	delta = 30,
+		  	header = $('header .header-btn-wrap'),
+		  	goUp = $('#go-up'),
+		  	wentUp = true,
+		  	wentDown = false;
+		  	$(window).scroll(function(event){
+
+		  		if($('nav.mobile').hasClass('open')){
+		  			return false;
+		  		}
+		  		var st = $(this).scrollTop();
+
+		      // if(Math.sign(st) <= 0){
+		      //   return false;
+		      // }
+
+		      if(Math.abs(lastScrollTop - st) <= delta)
+		      	return;
+
+		      //console.log(st+' '+lastScrollTop);
+		      
+		      if (st > lastScrollTop){
+		        // downscroll code
+		        if(wentUp){
+		          // header.addClass('js-hide');
+		          // goUp.removeClass('js-hide');
+		      }
+		      wentUp = false;
+		      wentDown = true;
+		  } else {
+		        // upscroll code
+		        if(wentDown){
+		          // header.removeClass('js-hide');
+		          // goUp.addClass('js-hide');
+		      }
+		      wentUp = true;
+		      wentDown = false;
+		  }
+		  lastScrollTop = st;
+		});
+		  });
+
+		  let goUp = $('#go-up');
+
+		  goUp.click(function(e){
+		  	$('html,body').animate({scrollTop:0},500);
+		  	e.preventDefault();
+		  })
+		};
+
+
+		function naviActi(){
+			$('.m-menu-btn').on("click",function(e){
+		    // $(this).toggleClass('on');
+		    $('nav').toggleClass('active');
+		});
+
+		}
 	</script>
 </html>

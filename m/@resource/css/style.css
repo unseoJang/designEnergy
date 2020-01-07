@@ -50,6 +50,7 @@ header.view-header.color_change-view .m-menu-btn.on span{background-color:#fff;}
 .m-menu-btn.on .three,.m-search-close.on .three{-webkit-transform: translateY(-3.05vw) rotateZ(-135deg);transform: translateY(-3.05vw) rotateZ(-135deg);}
 .nav-wrap{margin-top:31.09vw;font-size:8.59vw;text-align:center;font-family: 'Poppins', sans-serif;}
 .nav-wrap ul li a{color:#000;line-height:13.44vw;}
+.nav-wrap ul li a.active{border-bottom:4px solid #000;}
 .nav-footer{width:100%;/*max-width:87.5vw;*/margin:37.5vw 6.25vw 0;}
 .main .nav-footer{margin: 27.5vw 6.25vw 0;}
 .nav-footer address ul li{color:#000;font-family:'Noto Sans KR',sans-serif;font-weight:400;line-height:4.38vw;font-size:2.81vw;}
@@ -137,7 +138,7 @@ header{top:0;}
 .cont-article-wrap{font-family: 'Noto Sans KR', sans-serif;margin:0 auto;font-weight:71400;font-size:5.94vw;overflow:hidden;margin:0 auto;width:100%;}
 .sub-article-wrap{color:#000;font-family: 'Noto Sans KR', sans-serif;position:relative;}
 .sub-article-wrap .dot{color:#bf221e;}
-.sub-article-wrap .sub-title-area{margin:0 auto;padding-top:23.44vw; font-weight:500;line-height:8.44vw;letter-spacing:-1px;font-size:6.25vw;}
+.sub-article-wrap .sub-title-area{margin:0 auto;padding-top:23.44vw; font-weight:500;line-height:8.44vw;letter-spacing:-3px;font-size:6.25vw;}
 .cont-article-wrap .sub-cont-wrap{color:#000;margin:-1.25vw auto 0;line-height:7.19vw;padding-top:12.5vw;font-size:5.31vw;letter-spacing:-0.5px;max-width:87.5vw;}
 .img-article-wrap{background:url('../img/mo_about_con1.png')no-repeat center center;height:78.13vw;background-size:cover;}
 .cont-article-wrap .cont-article-wrap-sub{overflow:hidden;margin:7.81vw auto 0;max-width:87.5vw;}
@@ -312,7 +313,7 @@ body.active{overflow:hidden;}
 .about-us-list-wrap .contents-wrap p{font-size:3.44vw; width:87.5vw;margin:6.25vw auto 0;color:#000;}
 .about-us-list-wrap .img-wrap{margin-bottom:1.56vw;}
 
-.page-intro.sec-interior{z-index:-1;}
+.page-intro.sec-interior{z-index:1;}
 .num-wrap{text-align:center;}
 .num-wrap ul{display:inline-block;}
 .num-wrap ul li{float:left;margin-right:4.69vw;}

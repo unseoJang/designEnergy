@@ -41,10 +41,11 @@
 			</div>
 			<div class="nav-wrap">
 				<ul>
-					<li><a href="about.html">About</a></li>
-					<li><a href="interior.html">Interior</a></li>
-					<li><a href="architectural.html">Architectural</a></li>
-					<li><a href="recruit.html">Recruit</a></li>
+					<li><a href="../about.html">About</a></li>
+					<li><a href="../interior.html">Interior</a></li>
+					<li><a href="../architectural.html">Architectural</a></li>
+					<li><a href="../about_us.html" class="active">About Us</a></li>
+					<li><a href="../recruit.html">Recruit</a></li>
 				</ul>
 			</div>
 			<div class="nav-footer">
@@ -93,7 +94,7 @@
 			<address>Copyright © DesignEnergy All rights reserved.</address>
 		</footer>
 	</div>
-	<script type="text/javascript" src="../@resource/js/scroll.js"></script>
+	<!-- <script type="text/javascript" src="../@resource/js/scroll.js"></script> -->
 	<script type="text/javascript" src="../@resource/lip/delighters/delighters.min.js"></script>
 	<script type="text/javascript" src="../@resource/lip/sticky/sticky.js"></script>
 	<script type="text/javascript" src="../@resource/js/about_script.js"></script>
@@ -106,5 +107,84 @@
 		$(document).ready(function(){
 		    $("#sticker").sticky({topSpacing:0});
 		  });
+		/*
+		* Init page
+		*/
+		$(function(){
+			initPage();
+			naviActi();
+		});
+		function initPage(){
+
+		  /*
+		  * Used in multiple functions
+		  */
+		  let docWidth = $(window).width();
+
+		  /*
+		  * Header scroll down/up function
+		  * https://codepen.io/josiahruddell/pen/piFfq
+		  * with edits to control timing and not fire on every scroll.
+		  */
+		  $(function(){
+		  	var lastScrollTop = 0, 
+		  	delta = 30,
+		  	header = $('header .header-btn-wrap'),
+		  	goUp = $('#go-up'),
+		  	wentUp = true,
+		  	wentDown = false;
+		  	$(window).scroll(function(event){
+
+		  		if($('nav.mobile').hasClass('open')){
+		  			return false;
+		  		}
+		  		var st = $(this).scrollTop();
+
+		      // if(Math.sign(st) <= 0){
+		      //   return false;
+		      // }
+
+		      if(Math.abs(lastScrollTop - st) <= delta)
+		      	return;
+
+		      //console.log(st+' '+lastScrollTop);
+		      
+		      if (st > lastScrollTop){
+		        // downscroll code
+		        if(wentUp){
+		          // header.addClass('js-hide');
+		          // goUp.removeClass('js-hide');
+		      }
+		      wentUp = false;
+		      wentDown = true;
+		  } else {
+		        // upscroll code
+		        if(wentDown){
+		          // header.removeClass('js-hide');
+		          // goUp.addClass('js-hide');
+		      }
+		      wentUp = true;
+		      wentDown = false;
+		  }
+		  lastScrollTop = st;
+		});
+		  });
+
+		  let goUp = $('#go-up');
+
+		  goUp.click(function(e){
+		  	$('html,body').animate({scrollTop:0},500);
+		  	e.preventDefault();
+		  })
+		};
+
+
+		function naviActi(){
+			$('.m-menu-btn').on("click",function(e){
+		    // $(this).toggleClass('on');
+		    $('nav').toggleClass('active');
+		});
+
+		}
 	</script>
 </html>

@@ -33,17 +33,18 @@
 				<h1><a href="index.html"><img src="./@resource/img/logo.png"></a></h1>
 				<div class="m-menu-btn trs-prop-bg trs-du-06 on">
 					<div class="m-menu-btn-wrap">
-				      <span class="one trs-prop-transform trs-du-06"></span>
-				      <span class="two trs-prop-opacity trs-du-06"></span>
-				      <span class="three trs-prop-transform trs-du-06"></span>
-			    	</div>
-			    </div>
+						<span class="one trs-prop-transform trs-du-06"></span>
+						<span class="two trs-prop-opacity trs-du-06"></span>
+						<span class="three trs-prop-transform trs-du-06"></span>
+					</div>
+				</div>
 			</div>
 			<div class="nav-wrap">
 				<ul>
 					<li><a href="about.html">About</a></li>
 					<li><a href="interior.html">Interior</a></li>
 					<li><a href="architectural.html">Architectural</a></li>
+					<li><a href="javascript:void(0);" class="active">About Us</a></li>
 					<li><a href="recruit.html">Recruit</a></li>
 				</ul>
 			</div>
@@ -60,7 +61,7 @@
 		</nav>
 	</header>
 	<div id="wrap"class="wrapper">
-		<section class="page-intro delighter sec-interior" data-delighter="">
+		<section class="page-intro delighter sec-interior" data-delighter="" style="z-index:-1;">
 			<article id="sticker" class="sub-article-wrap sticky-wrapper interior-wrap">
 				<div class="container">
 					<p class="sub-title-area">
@@ -171,76 +172,84 @@
 				"mobile"          : "414"
 			},
 		};
-	</script>
-	<script type="text/javascript">
 		/*
-	* Init page
-	*/
-	$(function(){
-		initPage();
-	});
-	function initPage(){
+		* Init page
+		*/
+		$(function(){
+			initPage();
+			naviActi();
+		});
+		function initPage(){
 
-	  /*
-	  * Used in multiple functions
-	  */
-	  let docWidth = $(window).width();
+		  /*
+		  * Used in multiple functions
+		  */
+		  let docWidth = $(window).width();
 
-	  /*
-	  * Header scroll down/up function
-	  * https://codepen.io/josiahruddell/pen/piFfq
-	  * with edits to control timing and not fire on every scroll.
-	  */
-	  $(function(){
-	  	var lastScrollTop = 0, 
-	  	delta = 30,
-	  	header = $('header'),
-	  	goUp = $('#go-up'),
-	  	wentUp = true,
-	  	wentDown = false;
-	  	$(window).scroll(function(event){
+		  /*
+		  * Header scroll down/up function
+		  * https://codepen.io/josiahruddell/pen/piFfq
+		  * with edits to control timing and not fire on every scroll.
+		  */
+		  $(function(){
+		  	var lastScrollTop = 0, 
+		  	delta = 30,
+		  	header = $('header .header-btn-wrap'),
+		  	goUp = $('#go-up'),
+		  	wentUp = true,
+		  	wentDown = false;
+		  	$(window).scroll(function(event){
 
-	  		if($('nav.mobile').hasClass('open')){
-	  			return false;
-	  		}
-	  		var st = $(this).scrollTop();
+		  		if($('nav.mobile').hasClass('open')){
+		  			return false;
+		  		}
+		  		var st = $(this).scrollTop();
 
-	      // if(Math.sign(st) <= 0){
-	      //   return false;
-	      // }
-	      
-	      if(Math.abs(lastScrollTop - st) <= delta)
-	      	return;
+		      // if(Math.sign(st) <= 0){
+		      //   return false;
+		      // }
 
-	      //console.log(st+' '+lastScrollTop);
-	      
-	      if (st > lastScrollTop){
-	        // downscroll code
-	        if(wentUp){
-	        	header.removeClass('load-effect');
-	        	//goUp.removeClass('js-hide');
-	        }
-	        wentUp = false;
-	        wentDown = true;
-	    } else {
-	        // upscroll code
-	        if(wentDown){
-	        	header.addClass('load-effect');
-	        	//goUp.addClass('js-hide');
-	        }
-	        wentUp = true;
-	        wentDown = false;
-	    }
-	    lastScrollTop = st;
-	});
-	  });
+		      if(Math.abs(lastScrollTop - st) <= delta)
+		      	return;
 
-	  let goUp = $('#go-up');
+		      //console.log(st+' '+lastScrollTop);
+		      
+		      if (st > lastScrollTop){
+		        // downscroll code
+		        if(wentUp){
+		          // header.addClass('js-hide');
+		          // goUp.removeClass('js-hide');
+		      }
+		      wentUp = false;
+		      wentDown = true;
+		  } else {
+		        // upscroll code
+		        if(wentDown){
+		          // header.removeClass('js-hide');
+		          // goUp.addClass('js-hide');
+		      }
+		      wentUp = true;
+		      wentDown = false;
+		  }
+		  lastScrollTop = st;
+		});
+		  });
 
-	  goUp.click(function(e){
-	  	$('html,body').animate({scrollTop:0},500);
-	  	e.preventDefault();
-	  })
-};
+		  let goUp = $('#go-up');
+
+		  goUp.click(function(e){
+		  	$('html,body').animate({scrollTop:0},500);
+		  	e.preventDefault();
+		  })
+		};
+
+
+		function naviActi(){
+			$('.m-menu-btn').on("click",function(e){
+		    // $(this).toggleClass('on');
+		    $('nav').toggleClass('active');
+		});
+
+		}
 </script>
 </html>
