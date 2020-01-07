@@ -16,7 +16,7 @@
 	<script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
-	<!-- <div class="standard_about"><img src="./@resource/img/3_pc_1_Interior_1.jpg"></div> -->
+	<!-- <div class="standard_about"><img src="./@resource/img/(new)_pc_aboutus_2.jpg"></div> -->
 	<header class="about">
 		<h1><a href="index.html"><img src="./@resource/img/logo.png" alt="logo"></a></h1>
 		<nav>
@@ -31,7 +31,7 @@
 	</header>
 	<div id="wrap"class="wrapper">
 		<section class="page-intro delighter sec-interior" data-delighter="" style="z-index:-1;">
-			<article id="sticker" class="sub-article-wrap sticky-wrapper interior-wrap">
+			<article id="sticker" class="sub-article-wrap sticky-wrapper interior-wrap about-us">
 				<div class="container">
 					<p class="sub-title-area">
 						디자인에너지는 언제나<br/>
@@ -141,5 +141,101 @@
 				"mobile"          : "414"
 			},
 		};
+		$(function(){
+			 initPage();
+			//scrollJs();
+		});
+		function initPage(){
+
+  /*
+  * Used in multiple functions
+  */
+  let docWidth = $(window).width();
+
+  /*
+  * Header scroll down/up function
+  * https://codepen.io/josiahruddell/pen/piFfq
+  * with edits to control timing and not fire on every scroll.
+  */
+  $(function(){
+	    var lastScrollTop = 0, 
+	        delta = 30,
+	        header = $('header'),
+	        goUp = $('#go-up'),
+	        wentUp = true,
+	        wentDown = false;
+	    $(window).scroll(function(event){
+
+	      if($('nav.mobile').hasClass('open')){
+	        return false;
+	      }
+	      var st = $(this).scrollTop();
+
+	      if(Math.sign(st) <= 0){
+	        return false;
+	      }
+	       
+	      if(Math.abs(lastScrollTop - st) <= delta)
+	        return;
+
+	      //console.log(st+' '+lastScrollTop);
+	      
+	      if (st > lastScrollTop){
+	        // downscroll code
+	        if(wentUp){
+	          header.removeClass('load-effect');
+	          goUp.removeClass('js-hide');
+	        }
+	        wentUp = false;
+	        wentDown = true;
+	      } else {
+	        // upscroll code
+	        if(wentDown){
+	          header.addClass('load-effect');
+	          goUp.addClass('js-hide');
+	        }
+	        wentUp = true;
+	        wentDown = false;
+	      }
+	      lastScrollTop = st;
+	    });
+	  });
+
+	  let goUp = $('#go-up');
+	  $('.thumbnail-navigation li a img').hover(function() {
+   	     var title = $(this).attr('title');
+	        $(this).data('tipText', title).removeAttr('title');
+	        $('<p class="tooltip"></p>').text(title).appendTo('body').fadeIn('slow')
+	    }, function() {
+	        $(this).attr('title', $(this).data('tipText'));
+	        $('.tooltip').remove()
+	    }).mousemove(function(e) {
+	        var mousex = e.pageX + 10;
+	        var mousey = e.pageY - 30;
+	        $('.tooltip').css({
+	            top: mousey,
+	            left: mousex
+	        })
+	    })
+
+	  goUp.click(function(e){
+	    $('html,body').animate({scrollTop:0},500);
+	    e.preventDefault();
+	  })
+		};
+		function scrollJs(){
+		  var winW = $(window).outerWidth();
+		  var startchange = $('.color_change-list');
+		  var offset = startchange.offset();
+		  var headHeight = $('header').outerHeight() / 2;
+		    $(document).scroll(function() { 
+		      scroll_start = $(this).scrollTop();
+		      if(scroll_start >= offset.top - headHeight) {
+		        $('header').addClass('color_change-list');
+		      } else if(scroll_start < offset.top - headHeight) {
+		        $('header').removeClass('color_change-list');
+		      };
+		    });
+		  }
 	</script>
 </html>
