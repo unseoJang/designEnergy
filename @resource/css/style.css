@@ -118,7 +118,7 @@ body header.color_change-view nav ul li.menu-list a.active::before{background:#0
 .sub-article-wrap .sub-title-area{margin:0 auto 70px;min-width:1140px;max-width:1140px;font-weight:700;line-height:84px;letter-spacing:-1px;font-size:60px;}
 .cont-article-wrap .sub-cont-wrap{color:#000;width:1140px;margin:-8px auto 0;line-height:49px;padding-top:100px;}
 .img-article-wrap{background:url('../img/pc_about_con1.jpg')no-repeat center center;height:579px;background-size:cover;}
-.cont-article-wrap .cont-article-wrap-sub{overflow:hidden;margin-top:56px;}
+.cont-article-wrap .cont-article-wrap-sub{overflow:hidden;margin-top:56px;width:1140px;}
 .cont-article-wrap .cont-article-wrap-sub ul li{background-repeat:no-repeat;background-position:center top;float:left;padding-top:139px;box-sizing:border-box;border-right:1px solid #e5e5e5;}
 .cont-article-wrap .cont-article-wrap-sub ul li:first-child{background-image:url('../img/about_icon_01.png');background-position:50px top;}
 .cont-article-wrap .cont-article-wrap-sub ul li:nth-child(2){background-image:url('../img/about_icon_02.png');width:40%;}
@@ -379,8 +379,8 @@ footer address{color:#000;text-align:center;font-family:'Noto sans KR',sans-seri
 .about-us-wrap article:last-child{padding-bottom:70px}
 .about-us-wrap h2{font-size:28px;color:#000;font-weight:bold;line-height:45px;}
 .about-us-wrap .box-wrap{margin-top:23px;}
-.about-us-wrap .box-wrap p{margin-top:20px;font-size:15px;color:#000;line-height:18px;letter-spacing:-0.1px;font-family: 'Noto Sans KR', sans-serif;}
-.about-us-wrap .continues{text-align:center;font-size:18px;color:#b6b6b6;margin:80px 0 0;}
+.about-us-wrap .box-wrap p{margin-top:18px;font-size:15px;color:#000;line-height:20px;letter-spacing:-0.1px;font-family: 'Noto Sans KR', sans-serif;letter-spacing:-0.2px;}
+.about-us-wrap .continues{text-align:center;font-size:18px;color:#b6b6b6;margin:70px 0 20px;font-family: 'Noto Sans KR', sans-serif;}
 .num-wrap{text-align:center;display:block;overflow:hidden;margin-bottom: 90px;}
 .num-wrap ul{display:inline-block;}
 .num-wrap ul li{float:left;margin-right:14px;width:18px;}

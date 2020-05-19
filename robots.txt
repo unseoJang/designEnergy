@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: http://www.d-energy.co.kr/sitemap.xml
+Mozilla/5.0 (compatible; Yeti/1.1; +http://naver.me/spd)
